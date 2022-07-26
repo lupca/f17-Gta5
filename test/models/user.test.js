@@ -1,6 +1,16 @@
-import User from '../../src/model/User'
+import User from '../../src/models/User'
 
-test('User have id', () => {
-  const user = new User(1)
-  expect(user.citizenId).toBe(1);
-});
+describe('Check attr of User', () => {
+  const nameUser = "some name"
+  const idUser = 1
+  const user = new User(idUser, nameUser)
+
+  it('User have citizenId', () => {
+    expect(user.citizenId).toBe(idUser);
+  });
+  
+  it("User have name", () => {
+    expect(user.name).toBe(nameUser); 
+  })
+  
+})
