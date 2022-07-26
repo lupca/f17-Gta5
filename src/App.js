@@ -1,6 +1,6 @@
 import HomePage from 'pages/HomePage';
 import Payment from 'pages/Payment';
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import './App.scss';
 
 function App() {
