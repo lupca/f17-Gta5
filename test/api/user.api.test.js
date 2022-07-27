@@ -4,7 +4,7 @@ describe('Check attr of UserApi', () => {
   const userApi = new UserApi()
 
   it('UserApi have url', () => {
-    expect(userApi.url).toBe("/player");
+    expect(userApi.subdiretory).toBe("/player");
   })
 })
   
@@ -13,12 +13,10 @@ describe('Check action of UserApi', () => {
   
   it('User have urlWithParams', () => {
     userApi.params = '/1'
-    expect(userApi.setParamsToUrl().url).toBe("/player/1");
+    expect(userApi.setParamsToUrl().url).toBe(userApi.domain + userApi.subdiretory + '/1');
   });
 
-  it('UserApi Search by', () => {
+  it('UserApi Search by', async () => {
     // pedding
-    // await userApi.searchBy({citizenId: '/1'})
-    // expect(userApi.setParamsToUrl().url).toBe("/player/1");
   })
 })
