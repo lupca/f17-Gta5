@@ -1,11 +1,12 @@
 export default class BaseApi {
   constructor(){
-    this.url = ''
+    this.domain = process.env.REACT_APP_SERVER_PAYMENT_URL
     this.timeout = 600000
     this.contentType = "application/json"
     this.cache = 'no-cache'
     this.data = {}
     this.params = ''
+    this.subdiretory = ''
   }
 
   async postData() {
@@ -23,7 +24,7 @@ export default class BaseApi {
 
   async getData() {
     const response = await fetch(this.url, {
-      method: 'post',
+      method: 'get',
       mode: 'cors',
       cache: this.cache,
       headers: {
@@ -37,4 +38,12 @@ export default class BaseApi {
     this.url = this.url + this.params
     return this
   }
+
+  setSubdiretory(subdiretory) {
+    this.subdiretory = subdiretory
+    return this
+  }
+  
+  setUrl(url) {this.url = url; return this}
+  setDomain(domain) {this.domain = domain; return this}
 }
