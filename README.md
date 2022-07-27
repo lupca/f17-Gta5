@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Hưỡng dẫn deploy.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Các khái niệm đầu tiên
+- Docker là 1 server ảo, chạy trong máy thật.( file Dockerfile, và docker-compose.yml chứa config)
+- nodejs trình thông dịch thực thi mã JavaScript
+- NPM Node package manager là một công cụ tạo và quản lý các thư viện lập trình Javascript cho Node.js.
 
-## Available Scripts
+## 2 Cách cài.
+### Cách 1: Không phụ thuộc môi trường
+  - Với khái niện Docker bên trên, chúng ta sẽ upweb chỉ với 1 click hoặc 1 dòng lệnh bằng cách cài docker.
 
-In the project directory, you can run:
+  - Máy ảo này chạy trên bất kỳ máy thật nào được cài docker.
+  Việc còn lại để docker lo(các tác vụ tự động được code ở 2 file trong khái niệm)
+### Cách 2: Phụ thuộc môi trường.
+  - Cách này đòi hỏi phải cài các thư viện phức tạp liên quan(cũng ko quá nhiều)
+  - Nhược điểm so với cách 1 là dễ phát sinh lỗi do cài nhiều và mỗi loại máy cài 1 cách khác nhau.
+  - Ưu điểm là tự kiểm soát, không phụ thuộc docker
+## Cách 1: Không phụ thuộc môi trường
+Server cần có:
+1. Cài sẵn docker
+- Link cài linux: [Trang chủ intall](https://docs.docker.com/engine/install/ubuntu/)
+- Link cho window: [Trang chủ install](https://docs.docker.com/desktop/windows/install/)
 
-### `npm start`
+2. Run web với 1 dòng lệnh
+- di chuyển dòng lệnh tới thư mục dự án này.
+- Sau đó dùng lệnh: docker-compose -f compose.yml up --build -d
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Giải thích: 
+- `docker-compose` là từ khoá của docker.
+- -f compose.yml là chỉ định file: - compose.yml
+- `up` là báo cho docker biết: chúng ta muốn đưa ứng dụng lên(vào) trong container để sử dụng
+- --build đây là option, báo cho docker biết: chúng ta sẽ build ứng dụng này(thư mục hiện tại)
+- -d là Detached mode, chạy web ở chế độ backgroud
+## Cách 2: Phụ thuộc môi trường.
+Server cần có:
+1. Nodejs: [Tại đây có file cài đặt, hãy chọn hệ điều hành đang dùng](https://nodejs.org/en/download/)
+- Link Nodejs cho window: [here](https://nodejs.org/dist/v16.15.0/node-v16.15.0-x86.msi)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Cài đặt + run web
 
-### `npm test`
+- npm là từ khoá thuộc NPM(cần cài nodejs trước)
+- install yêu cầu cài đặt ứng dụng nào đó
+- -g global: Cài cho toàn hệ thống sử dụng( chứ ko chỉ cho ứng dụng hiện tại)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+***Lưu ý***: cần cấp quyền cao nhất khi cài các thư viện dưới
+1. Cài máy chủ xử lý nhận request và handle.
+- npm install -g serve
 
-### `npm run build`
+2. Cài các gói phụ thuộc nodejs
+- Dùng lệnh: npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Bắt đầu build
+- npm run build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Run server:
+- serve -s build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. [option] Run server with port
+- serve -s build -l 4000
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Tài liệu liên quan web:
+To be continues...
