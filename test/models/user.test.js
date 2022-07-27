@@ -12,5 +12,4 @@ describe('Check attr of User', () => {
   it("User have name", () => {
     expect(user.name).toBe(nameUser); 
   })
-  
 })
