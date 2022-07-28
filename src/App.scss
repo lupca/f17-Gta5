@@ -1,5 +1,15 @@
-$primary-color: #9FC9EB;
-$secondary-color: #F59799;
-$accent-color: #ff791f;
-$text-light:'white';
-$text-dark:#080808
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}

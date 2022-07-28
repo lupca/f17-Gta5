@@ -1,13 +1,17 @@
-import React from 'react'
-import HeroBanner from './HeroBanner'
+import MainLayout from "layout/MainLayout";
+import React from "react";
+import Features from "./Features";
+import HeroBanner from "./HeroBanner";
 
 const HomePage = () => {
   return (
-    <div>
-      <HeroBanner />
+    <MainLayout>
+      <>
+        <HeroBanner />
+        <Features />
+      </>
+    </MainLayout>
+  );
+};
 
-    </div>
-  )
-}
-
-export default HomePage
+export default HomePage;

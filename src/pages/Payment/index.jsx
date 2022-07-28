@@ -1,7 +1,12 @@
+import MainLayout from "layout/MainLayout";
 import React from "react";
 
 const Payment = () => {
-  return <div>Payment</div>;
+  return (
+    <MainLayout>
+      <div className="payment">Payment</div>
+    </MainLayout>
+  );
 };
 
 export default Payment;
