@@ -1,4 +1,4 @@
-@use '../styles/var.scss';
+@use '../../styles/var.scss';
 .gpt3__navbar {
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,6 @@
 	flex-direction: row;
 	p {
 		color: #fff;
-		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 25px;
@@ -38,7 +37,6 @@
 	align-items: center;
 	p {
 		color: #fff;
-		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 25px;
@@ -50,7 +48,6 @@
 		padding: 0.5rem 1rem;
 		color: #fff;
 		background: #FF4820;
-		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 25px;
@@ -63,7 +60,6 @@
 .gpt3__navbar-menu_container {
 	p {
 		color: #fff;
-		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 25px;
@@ -76,7 +72,6 @@
 		padding: 0.5rem 1rem;
 		color: var.$text-color;
 		background: #FF4820;
-		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 25px;

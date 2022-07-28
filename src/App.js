@@ -1,4 +1,4 @@
-import Navbar from "layout/Navbar";
+import Navbar from "layout/Navbar/Navbar";
 import HomePage from "pages/HomePage";
 import Payment from "pages/Payment";
 import { Routes, Route } from "react-router-dom";
