@@ -1,20 +1,16 @@
+import { Container } from "@mui/material";
+import Images from "assets/images";
 import React from "react";
-import { Button } from "@mui/material";
-import { animateScroll } from "react-scroll";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import "./Footer.scss";
 
-const scroll = animateScroll;
 const Footer = () => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
   return (
-    <div>
+    <footer>
       Footer
-      <div id="back-to-top" onClick={scrollToTop}>
-        <ExpandLessIcon />
-      </div>
-    </div>
+      <Container maxWidth="xl">
+        <img src={Images.LOGO} alt="F17" />
+      </Container>
+    </footer>
   );
 };
 

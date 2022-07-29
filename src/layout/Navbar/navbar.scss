@@ -4,8 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
+  width: 100vw;
+  max-width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 20;
 }
 .gpt3__navbar-links {
@@ -66,7 +69,7 @@
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
-  background: var(--color-footer);
+  background: var.$primary-color;
   padding: 2rem;
   position: absolute;
   right: 0;
