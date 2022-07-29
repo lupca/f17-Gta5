@@ -1,0 +1,9 @@
+@use "../../styles/var.scss" as var;
+
+footer {
+  background-color: var.$primary-color;
+  height: 200px;
+  img {
+    height: 30px;
+  }
+}
