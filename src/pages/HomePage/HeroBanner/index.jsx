@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Images from "assets/images";
 import "./HeroBanner.scss";
-import { Collapse, Container, Grow, IconButton } from "@mui/material";
+import { Collapse, Container } from "@mui/material";
 import { Link as Scroll } from "react-scroll";
 function HeroBanner(props) {
   return (

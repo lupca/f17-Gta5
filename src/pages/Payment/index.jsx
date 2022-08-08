@@ -3,6 +3,7 @@ import React from "react";
 import Images from "assets/images";
 import "./Payment.scss";
 import { Container } from "@mui/material";
+import PaymentForm from "./Form"
 
 const Payment = () => {
   return (
@@ -14,7 +15,9 @@ const Payment = () => {
         }}
       >
         <Container maxWidth="xl">
-          <div className="content">Payment</div>
+          <div className="content">
+            <PaymentForm/>
+          </div>
         </Container>
       </div>
     </MainLayout>
