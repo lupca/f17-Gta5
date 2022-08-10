@@ -10,3 +10,4 @@ export default class PaymentMethodApi extends BaseApi{
     return await this.getData()
   }
 }
+
