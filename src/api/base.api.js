@@ -43,6 +43,10 @@ export default class BaseApi {
     this.subdiretory = subdiretory
     return this
   }
+
+  setData(data) {
+    this.data = data
+  }
   
   setUrl(url) {this.url = url; return this}
   setDomain(domain) {this.domain = domain; return this}
