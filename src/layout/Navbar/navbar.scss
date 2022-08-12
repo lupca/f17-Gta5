@@ -1,7 +1,7 @@
 @use "../../styles/var.scss" as var;
 .gpt3__navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem 6rem;
   width: 100vw;
@@ -20,8 +20,8 @@
 .gpt3__navbar-links_logo {
   margin-right: 2rem;
   img {
-    width: 62.56px;
-    height: 16.02px;
+    width: 120px;
+    // height: 16.02px;
   }
 }
 .gpt3__navbar-links_container {
