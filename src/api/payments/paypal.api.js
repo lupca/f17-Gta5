@@ -11,7 +11,7 @@ export default class payPalWebhookApi extends BaseApi{
       tranId: tranId, 
       ackTime: ackTime, 
       amount: amount, 
-      currency_code: currencyCode, 
+      currencyCode: currencyCode, 
       status: status, 
       partnerId: partnerId, 
       citizenid: citizenId, 
