@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import {Container} from "@mui/material";
 import Images from "assets/images";
 import React from "react";
 import "./Footer.scss";
@@ -6,9 +6,13 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      Footer
       <Container maxWidth="xl">
-        <img src={Images.LOGO} alt="F17" />
+
+        <p>Liên kết mạng xã hội</p>
+        <div className="list-social">
+          <img src={Images.LOGO} alt="F17" />
+        </div>
+
       </Container>
     </footer>
   );
