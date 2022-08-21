@@ -1,8 +1,11 @@
 @use "../../styles/var.scss" as var;
 
 footer {
-  background-color: var.$primary-color;
-  height: 200px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+
   img {
     height: 30px;
   }

@@ -2,7 +2,7 @@ import MainLayout from "layout/MainLayout";
 import React from "react";
 import Images from "assets/images";
 import "./Payment.scss";
-import { Container } from "@mui/material";
+import {Container} from "@mui/material";
 import PaymentForm from "./Form"
 
 const Payment = () => {
@@ -11,12 +11,12 @@ const Payment = () => {
       <div
         className="payment"
         style={{
-          backgroundImage: `url(${Images.HeroBanner})`,
+          backgroundImage: `url(${Images.BgBanner})`,
         }}
       >
         <Container maxWidth="xl">
           <div className="content">
-            <PaymentForm/>
+            <PaymentForm />
           </div>
         </Container>
       </div>
