@@ -1,0 +1,12 @@
+@use "../../styles/var.scss" as var;
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+
+  img {
+    height: 30px;
+  }
+}

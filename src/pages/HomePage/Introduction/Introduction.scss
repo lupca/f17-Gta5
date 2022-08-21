@@ -1,0 +1,32 @@
+.video-intro-wrap {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  .video-intro {
+    position: relative;
+
+    .men-img {
+      position: absolute;
+      z-index: -1;
+      width: 550px;
+      left: -355px;
+      top: -110px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #8fe4ff;
+      margin-bottom: 2rem;
+    }
+  }
+
+}

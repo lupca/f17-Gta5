@@ -1,0 +1,68 @@
+.how-to-join {
+  position: relative;
+
+  .women-img {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    height: 110vh;
+  }
+
+  .card {
+    width: 822px;
+    height: 462px;
+    background-image: url('../../../assets/images/MaskCard.png');
+
+    p.step {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;
+    }
+
+    p.step-title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 75px;
+
+      text-transform: uppercase;
+    }
+
+    p.step-content {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-transform: uppercase;
+
+      color: #FFFCAD;
+
+    }
+
+    .button-action {
+      width: fit-content;
+      height: 50px;
+      padding: 10px 1rem;
+      background: #FFB548;
+      border-radius: 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .register {
+      background: rgba(207, 31, 54, 0.8);
+      height: 100%;
+      padding: 2rem;
+
+    }
+
+    .download-launcher {
+      background: rgba(60, 34, 191, 0.8);
+      height: 100%;
+      padding: 2rem;
+    }
+  }
+
+}
