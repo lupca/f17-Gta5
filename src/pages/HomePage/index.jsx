@@ -22,9 +22,11 @@ const HomePage = () => {
           <Introduction />
           <HowToJoin />
           <Features />
-          <ListVideo />
-          {/* <Footer /> */}
         </div>
+        <ListVideo />
+
+        <Footer />
+
       </>
     </MainLayout>
   );

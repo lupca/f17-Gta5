@@ -29,7 +29,23 @@ const Images = {
   PaymentMethod: {
     Momo: Momo,
   },
-  Features: [Feature2, Feature1, Feature3],
+  Features: [
+    {
+      image: Feature2,
+      content:
+        "Each round, you and 15 other contestants compete toescape a deadly island filled with monsters.",
+    },
+    {
+      image: Feature1,
+      content:
+        "You and 15 other contestants compete toescape a deadly island filled with monsters.",
+    },
+    {
+      image: Feature3,
+      content:
+        "15 other contestants compete toescape a deadly island filled with monsters.",
+    },
+  ],
   Social: { TikTok, Discord, Facebook, Youtube },
 };
 
