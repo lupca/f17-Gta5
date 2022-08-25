@@ -8,13 +8,16 @@
 
   .video-intro {
     position: relative;
+    width: 65vw;
+    max-height: 80vh;
 
     .men-img {
       position: absolute;
       z-index: -1;
-      width: 550px;
       left: -355px;
       top: -110px;
+      max-height: 100vh;
+      width: auto;
     }
 
     .title {
@@ -26,6 +29,28 @@
 
       color: #8fe4ff;
       margin-bottom: 2rem;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .video-intro-wrap {
+
+    .video-intro {
+      width: 80vw;
+
+      .men-img {
+        left: -135px;
+        top: -159px;
+
+      }
+
+      .title {
+        font-size: 18px;
+        line-height: 1.5;
+
+      }
     }
   }
 

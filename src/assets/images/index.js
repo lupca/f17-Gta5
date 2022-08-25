@@ -45,6 +45,11 @@ const Images = {
       content:
         "15 other contestants compete toescape a deadly island filled with monsters.",
     },
+    {
+      image: Feature3,
+      content:
+        "144 other contestants compete toescape a deadly island filled with monsters.",
+    },
   ],
   Social: { TikTok, Discord, Facebook, Youtube },
 };

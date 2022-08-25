@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import {Element} from "react-scroll";
 import {Carousel} from '3d-react-carousal';
-import {Container} from "@mui/material";
 import './Features.scss'
 import Images from "assets/images";
+import FeatureDetail from "./FeatureDetail";
+
+let slides = Images.Features.map((image, index) => <img key={index} src={image.image} alt={image.content} />)
 
 const Features = () => {
   const [selectedImage, setSelectedImage] = useState(0)
   const onSlideChange = function (index) {
-    console.log("callback", index);
     setSelectedImage(index)
   }
-  let slides = Images.Features.map((image, index) => <img key={index} src={image.image} alt={image.content} />)
   return (
     <Element name="features" className="element">
       <div className="wrap-feature" style={{minHeight: "100vh"}}>
@@ -25,6 +25,7 @@ const Features = () => {
           <div className="item cyan"></div>
         </div>
       </div>
+      <FeatureDetail />
     </Element>
   );
 };

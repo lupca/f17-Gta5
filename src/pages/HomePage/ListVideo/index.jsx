@@ -1,7 +1,7 @@
-import { Container } from "@mui/material";
-import React, { useState } from "react";
+import {Container} from "@mui/material";
+import React, {useState} from "react";
 import CustomButton from "./CustomButton";
-import { listTab } from "./data";
+import {listTab} from "./data";
 import "./ListVideo.scss";
 import ListVideoContent from "./ListVideoContent/ListVideoContent";
 
