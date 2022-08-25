@@ -1,58 +1,33 @@
-import {Button, ButtonGroup, Container, Grid, styled} from '@mui/material'
-import React from 'react'
-import YouTube from 'react-youtube';
-import './ListVideo.scss'
-const CustomButton = styled(Button)({
-  boxShadow: 'none',
-  textTransform: 'none',
-  padding: '6px 12px',
-  lineHeight: 1.5,
-  backgroundColor: '#fff',
-  color: '#000',
-  borderRadius: 0,
+import { Container } from "@mui/material";
+import React, { useState } from "react";
+import CustomButton from "./CustomButton";
+import { listTab } from "./data";
+import "./ListVideo.scss";
+import ListVideoContent from "./ListVideoContent/ListVideoContent";
 
-  '&:hover': {
-    backgroundColor: '#8574D7',
-    color: '#fff'
-  },
-  '&:active': {
-    backgroundColor: '#8574D7',
-    color: '#fff'
-  },
-  '&.selected': {
-    backgroundColor: '#8574D7',
-    color: '#fff'
-  },
-  '&:focus': {
-    // boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-  },
-});
 const ListVideo = () => {
+  const [selectTab, setSelectTab] = useState(0);
   return (
-    <div className='list-video'>ListVideo
+    <div className="list-video">
       <div className="group-tab">
-        <Container>
-          <CustomButton className='selected' >One</CustomButton>
-          <CustomButton>Two</CustomButton>
-          <CustomButton>Three</CustomButton>
+        <Container maxWidth="xl">
+          {listTab.map((item, index) => (
+            <CustomButton
+              key={item.key}
+              className={selectTab === index ? "selected" : ""}
+              onClick={() => setSelectTab(index)}
+              size="large"
+            >
+              {item.label}
+            </CustomButton>
+          ))}
         </Container>
       </div>
-      <div className="videos">
-        <Grid container spacing={2}>
-          <Grid item xs={8} sm={4}>
-            list thumbnail
-          </Grid>
-          <Grid item xs={4} sm={8}>
-            <YouTube videoId="tzkmSXQQQaQ" />
-
-          </Grid>
-
-        </Grid>
-
-
-      </div>
+      <Container maxWidth="xl">
+        <ListVideoContent videoIds={listTab[selectTab].videoIds} />
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default ListVideo
+export default ListVideo;

@@ -1,19 +1,14 @@
 @use "../../styles/var.scss" as var;
 
 footer {
-  // position: absolute;
-  // bottom: 30px;
-  // right: 30px;
-  // text-align: right;
   background-color: #222636;
-  height: 220px;
-
+  height: 240px;
 
   .bg-linear {
     height: 100%;
     position: relative;
     clip-path: polygon(0 65%, 125% 0, 100% 100%, 0% 100%);
-    background: linear-gradient(213.7deg, #8800F0 17.12%, #351FB3 75.15%);
+    background: linear-gradient(213.7deg, #8800f0 17.12%, #351fb3 75.15%);
   }
 
   .footer-content {
@@ -39,6 +34,4 @@ footer {
       }
     }
   }
-
-
 }

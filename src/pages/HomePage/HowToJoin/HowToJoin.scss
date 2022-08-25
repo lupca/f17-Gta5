@@ -9,9 +9,10 @@
   }
 
   .card {
+    max-width: 80vw;
     width: 822px;
     height: 462px;
-    background-image: url('../../../assets/images/MaskCard.png');
+    background-image: url("../../../assets/images/MaskCard.png");
 
     p.step {
       font-weight: 700;
@@ -34,15 +35,14 @@
       line-height: 38px;
       text-transform: uppercase;
 
-      color: #FFFCAD;
-
+      color: #fffcad;
     }
 
     .button-action {
       width: fit-content;
       height: 50px;
       padding: 10px 1rem;
-      background: #FFB548;
+      background: #ffb548;
       border-radius: 30px;
       text-transform: uppercase;
       cursor: pointer;
@@ -55,7 +55,6 @@
       background: rgba(207, 31, 54, 0.8);
       height: 100%;
       padding: 2rem;
-
     }
 
     .download-launcher {
@@ -64,5 +63,4 @@
       padding: 2rem;
     }
   }
-
 }
