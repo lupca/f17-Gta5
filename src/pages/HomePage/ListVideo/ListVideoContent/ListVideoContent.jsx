@@ -19,7 +19,7 @@ const ListVideoContent = ({videoIds}) => {
 
   return (
     <div className="videos">
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item xs={2} sm={2}>
           <div className="list-video-thumbnail">
             {listCurrentVideo.map((videoId) => (

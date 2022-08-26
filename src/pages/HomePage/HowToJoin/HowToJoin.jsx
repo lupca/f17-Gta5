@@ -2,9 +2,9 @@ import {Container} from '@mui/material'
 import Images from 'assets/images'
 import {ActionButton} from 'components'
 import React from 'react'
-import DownloadLauncher from './DownloadLauncher'
+import DownloadLauncher from './components/DownloadLauncher'
 import './HowToJoin.scss'
-import Register from './Register'
+import Register from './components/Register'
 
 const HowToJoin = () => {
   return (

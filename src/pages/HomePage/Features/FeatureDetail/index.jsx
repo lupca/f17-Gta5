@@ -9,7 +9,6 @@ const FeatureDetail = () => {
   return (
     <Container maxWidth="lg">
       <div className="feature-detail">
-        FeatureDetail
         <Grid container spacing={2}>
           <Grid item xs={12} sm={3}>
             <div className="feature-thumbnails ">

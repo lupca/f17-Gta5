@@ -46,3 +46,20 @@
     color: #fff
   }
 }
+
+@media screen and (max-width: 550px) {
+  .tab-feature {
+
+    .label {
+      font-size: 1rem;
+    }
+
+    .content {}
+
+    .tab-thumbnail {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
