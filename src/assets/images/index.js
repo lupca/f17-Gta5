@@ -11,6 +11,12 @@ import Momo from "./paymentMethods/momo.png";
 import Feature1 from "./features/feature1.png";
 import Feature2 from "./features/feature2.png";
 import Feature3 from "./features/feature3.png";
+import event from "./features/event.png";
+import hot from "./features/hot.png";
+import sale from "./features/sale.png";
+import store from "./features/store.png";
+import feat1 from "./featureDetail/1.png";
+
 //Social icon
 import TikTok from "./social/tiktok.png";
 import Facebook from "./social/facebook.png";
@@ -28,6 +34,13 @@ const Images = {
   CallToAction,
   PaymentMethod: {
     Momo: Momo,
+  },
+  FeatureDetail: {
+    event,
+    sale,
+    hot,
+    store,
+    feat1,
   },
   Features: [
     {

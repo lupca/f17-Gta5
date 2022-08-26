@@ -11,17 +11,17 @@ export const listTab = [
     ],
   },
   {
-    key: "newest",
+    key: "event",
     label: "Sự kiện",
     videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
   },
   {
-    key: "newest",
+    key: "guides",
     label: "Hướng dẫn",
     videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
   },
   {
-    key: "newest",
+    key: "share",
     label: "Chia sẻ",
     videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
   },
