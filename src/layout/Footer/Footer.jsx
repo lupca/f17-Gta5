@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div className="bg-linear">
         <div className="footer-content">
-          <Container maxWidth="xl"  >
+          <Container maxWidth="lg" >
             <p className="text" >Liên kết mạng xã hội</p>
             <div className="list-social">
               <a href="https://bit.ly/f17cityfb" target='_blank' rel="noreferrer">

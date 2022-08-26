@@ -1,10 +1,10 @@
-import { Grid, TablePagination } from "@mui/material";
-import { VideoYoutube } from "components";
-import React, { useEffect, useState } from "react";
+import {Grid, TablePagination} from "@mui/material";
+import {VideoYoutube} from "components";
+import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import "./ListVideoContent.scss";
 
-const ListVideoContent = ({ videoIds }) => {
+const ListVideoContent = ({videoIds}) => {
   const [selectedVideo, setSelectedVideo] = useState(videoIds[0]);
   const [listCurrentVideo, setListCurrentVideo] = useState([]);
   const [page, setPage] = useState(0);
@@ -20,7 +20,7 @@ const ListVideoContent = ({ videoIds }) => {
   return (
     <div className="videos">
       <Grid container spacing={2}>
-        <Grid item sm={2}>
+        <Grid item xs={2} sm={2}>
           <div className="list-video-thumbnail">
             {listCurrentVideo.map((videoId) => (
               <img
@@ -32,7 +32,7 @@ const ListVideoContent = ({ videoIds }) => {
             ))}
             <TablePagination
               component="div"
-              count={100}
+              count={10}
               page={page}
               onPageChange={handleChangePage}
               rowsPerPage={4}
@@ -41,7 +41,7 @@ const ListVideoContent = ({ videoIds }) => {
             />
           </div>
         </Grid>
-        <Grid item sm={10}>
+        <Grid item xs={10} sm={10}>
           <VideoYoutube videoId={selectedVideo} />
         </Grid>
       </Grid>

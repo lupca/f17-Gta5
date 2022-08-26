@@ -10,7 +10,7 @@ const ListVideo = () => {
   return (
     <div className="list-video">
       <div className="group-tab">
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           {listTab.map((item, index) => (
             <CustomButton
               key={item.key}
@@ -23,7 +23,7 @@ const ListVideo = () => {
           ))}
         </Container>
       </div>
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
         <ListVideoContent videoIds={listTab[selectTab].videoIds} />
       </Container>
     </div>

@@ -1,16 +1,17 @@
-import { Container, Grid } from "@mui/material";
+import {Container, Grid} from "@mui/material";
 import Images from "assets/images";
-import React, { useState } from "react";
+import React, {useState} from "react";
 import TabFeature from "./components/TabFeature";
+import './FeatureDetail.scss'
 
 const FeatureDetail = () => {
   const [selectTab, setSelectTab] = useState(0);
   return (
-    <Container maxWidth="xl">
-      <div>
+    <Container maxWidth="lg">
+      <div className="feature-detail">
         FeatureDetail
         <Grid container spacing={2}>
-          <Grid item sm={3}>
+          <Grid item xs={12} sm={3}>
             <div className="feature-thumbnails ">
               {listTab.map((tab, index) => (
                 <div key={tab.key} onClick={() => setSelectTab(index)}>
@@ -19,7 +20,7 @@ const FeatureDetail = () => {
               ))}
             </div>
           </Grid>
-          <Grid item sm={9}>
+          <Grid item xs={0} sm={9}>
             <div className="feature-image">
               <img src={listTab[selectTab].imgFeature} alt="feature" />
             </div>
@@ -43,21 +44,21 @@ const listTab = [
     key: "store",
     label: "Cửa hàng",
     contents: ["+ Nâng cấp xe", "+ Thay đổi diện mạo"],
-    imgFeature: Images.FeatureDetail.feat1,
+    imgFeature: Images.FeatureDetail.feat2,
     thumbnail: Images.FeatureDetail.store,
   },
   {
     key: "sale",
     label: "Khuyến mãi",
     contents: ["+ Ưu đãi tháng 8"],
-    imgFeature: Images.FeatureDetail.feat1,
+    imgFeature: Images.FeatureDetail.feat3,
     thumbnail: Images.FeatureDetail.sale,
   },
   {
     key: "hot",
     label: "Tiêu điểm",
     contents: ["+ Thông tin nổi bật"],
-    imgFeature: Images.FeatureDetail.feat1,
+    imgFeature: Images.FeatureDetail.feat4,
     thumbnail: Images.FeatureDetail.hot,
   },
 ];

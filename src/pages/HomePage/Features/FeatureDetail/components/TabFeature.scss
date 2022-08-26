@@ -1,8 +1,10 @@
 .inner-border {
   border: 1rem solid #fff;
   box-shadow: inset 0px 0px 0px 1px #6d59cf;
-  box-sizing: border-box; /* Include padding and border in element's width and height */
+  box-sizing: border-box;
+  /* Include padding and border in element's width and height */
 }
+
 .tab-feature {
   background-color: #fff;
   margin-bottom: 1rem;
@@ -16,19 +18,31 @@
     color: #3c22bf;
     padding: 1rem;
   }
+
   .content {
-    padding: 0.5rem;
+    padding: 1rem;
+    padding-top: 0;
+    color: #000;
+    padding-bottom: 50px;
     // .tab-content {
     // }
   }
+
   .tab-thumbnail {
     position: absolute;
     right: -30%;
+    top: 0;
   }
 }
+
 .tab-feature.selected {
   background-color: #8574d7;
+
   .label {
     color: #fffcad;
+  }
+
+  .content {
+    color: #fff
   }
 }

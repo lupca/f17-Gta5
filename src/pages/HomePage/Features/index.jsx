@@ -14,7 +14,7 @@ const Features = () => {
   }
   return (
     <Element name="features" className="element">
-      <div className="wrap-feature" style={{minHeight: "100vh"}}>
+      <div className="wrap-feature" >
         <Carousel slides={slides} onSlideChange={onSlideChange} />
         <p style={{marginTop: 26}}>
           {Images.Features[selectedImage].content}

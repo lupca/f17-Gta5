@@ -12,7 +12,7 @@ function HeroBanner(props) {
         backgroundImage: `url(${Images.HeroBanner})`,
       }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth="lg">
 
         <div id="scroll-down-animation">
           <Scroll to="features">

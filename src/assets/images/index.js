@@ -16,6 +16,9 @@ import hot from "./features/hot.png";
 import sale from "./features/sale.png";
 import store from "./features/store.png";
 import feat1 from "./featureDetail/1.png";
+import feat2 from "./featureDetail/2.png";
+import feat3 from "./featureDetail/3.png";
+import feat4 from "./featureDetail/4.png";
 
 //Social icon
 import TikTok from "./social/tiktok.png";
@@ -41,6 +44,9 @@ const Images = {
     hot,
     store,
     feat1,
+    feat2,
+    feat3,
+    feat4,
   },
   Features: [
     {
