@@ -8,28 +8,29 @@ import PersonIcon from '@mui/icons-material/Person';
 
 
 const Discount = () => { 
-  const [mounted, setmounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [emptyCitizenId, setemptyCitizenId] = useState(false);
-  const [citizenId, setcitizenId] =useState('')
+  const [citizenId, setCitizenId] = useState('')
+
   function onclickCheckUser (citizenId) {
     const user = new UserApi()
     if (citizenId == '/' ||citizenId == ''  ) {
       setemptyCitizenId (true)
-      setmounted(false)
+      setMounted(false)
       return
     }
     setemptyCitizenId (false)
-    console.log(citizenId)
     user.setParamsToUrl().searchBy({citizenId: citizenId})
     .then(data => {
-      if (data.code ==201){
-        setmounted(true)
+      if (data.code == 201){
+        setMounted(true)
       }
       else {
-        setmounted(false)
+        setMounted(false)
       }
     })  
   }
+  
   return (
     <Card  variant="outlined" >
       <div variant="outlined" className="payment-form__discount-title">
@@ -45,7 +46,7 @@ const Discount = () => {
         <span className="payment-form__img" id="basic-addon1">
           <PersonIcon className="payment-form__discount-icon"/>
         </span>
-        <input type="text" onChange={event => setcitizenId('/' + event.target.value)} className="payment-form__discount-citizenid" placeholder="ID nhân vật" name="citizenid" aria-label="Username" aria-describedby="basic-addon1" />
+        <input type="text" onChange={event => setCitizenId('/' + event.target.value)} className="payment-form__discount-citizenid" placeholder="ID nhân vật" name="citizenid" aria-label="Username" aria-describedby="basic-addon1" />
         <button onClick={(e) => onclickCheckUser(citizenId, e)} className="payment-form__discount-btlchecking-user" type="button" data-mdb-ripple-color="dark">
           Check
         </button>
