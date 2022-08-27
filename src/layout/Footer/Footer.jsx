@@ -6,14 +6,29 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <footer>
-      <Container maxWidth="xl">
-
-        <p>Liên kết mạng xã hội</p>
-        <div className="list-social">
-          <img src={Images.LOGO} alt="F17" />
+      <div className="bg-linear">
+        <div className="footer-content">
+          <Container maxWidth="lg" >
+            <p className="text" >Liên kết mạng xã hội</p>
+            <div className="list-social">
+              <a href="https://bit.ly/f17cityfb" target='_blank' rel="noreferrer">
+                <img src={Images.Social.TikTok} alt="F17" />
+              </a>
+              <a href="https://bit.ly/f17citydc" target='_blank' rel="noreferrer">
+                <img src={Images.Social.Discord} alt="F17" />
+              </a>
+              <a href="https://bit.ly/f17cityfb" target='_blank' rel="noreferrer">
+                <img src={Images.Social.Facebook} alt="F17" />
+              </a>
+              <a href="https://bit.ly/f17cityyt" target='_blank' rel="noreferrer">
+                <img src={Images.Social.Youtube} alt="F17" />
+              </a>
+            </div>
+          </Container>
         </div>
 
-      </Container>
+      </div>
+
     </footer>
   );
 };

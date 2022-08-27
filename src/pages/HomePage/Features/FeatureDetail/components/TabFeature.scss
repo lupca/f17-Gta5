@@ -1,0 +1,65 @@
+.inner-border {
+  border: 1rem solid #fff;
+  box-shadow: inset 0px 0px 0px 1px #6d59cf;
+  box-sizing: border-box;
+  /* Include padding and border in element's width and height */
+}
+
+.tab-feature {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+
+  .label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3c22bf;
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 1rem;
+    padding-top: 0;
+    color: #000;
+    padding-bottom: 50px;
+    // .tab-content {
+    // }
+  }
+
+  .tab-thumbnail {
+    position: absolute;
+    right: -30%;
+    top: 0;
+  }
+}
+
+.tab-feature.selected {
+  background-color: #8574d7;
+
+  .label {
+    color: #fffcad;
+  }
+
+  .content {
+    color: #fff
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tab-feature {
+
+    .label {
+      font-size: 1rem;
+    }
+
+    .content {}
+
+    .tab-thumbnail {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

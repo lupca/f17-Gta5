@@ -1,12 +1,12 @@
 import Images from "assets/images";
-import React, { useState } from "react";
+import React, {useState} from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbar.scss";
-import { Container } from "@mui/material";
-import { Link as Scroll } from "react-scroll";
-import { navbarItems } from "const";
-import { Link } from "react-router-dom";
+import {Container} from "@mui/material";
+import {Link as Scroll} from "react-scroll";
+import {navbarItems} from "const";
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
     );
   });
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="lg">
       <div className="gpt3__navbar">
         <div className="gpt3__navbar-links">
           <div className="gpt3__navbar-links_logo">
@@ -48,12 +48,12 @@ const Navbar = () => {
           {toggleMenu ? (
             <CloseIcon
               size={27}
-              sx={{ color: "white" }}
+              sx={{color: "white"}}
               onClick={() => setToggleMenu(false)}
             />
           ) : (
             <MenuIcon
-              sx={{ color: "white" }}
+              sx={{color: "white"}}
               size={27}
               onClick={() => setToggleMenu(true)}
             />

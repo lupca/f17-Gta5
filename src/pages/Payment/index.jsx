@@ -14,7 +14,7 @@ const Payment = () => {
           backgroundImage: `url(${Images.BgBanner})`,
         }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="lg">
           <div className="content">
             <PaymentForm />
           </div>

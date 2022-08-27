@@ -1,8 +1,8 @@
 import React from "react";
 import Images from "assets/images";
 import "./HeroBanner.scss";
-import {Collapse, Container} from "@mui/material";
-import {Link as Scroll} from "react-scroll";
+import { Container } from "@mui/material";
+import { Link as Scroll } from "react-scroll";
 function HeroBanner(props) {
   return (
     <div
@@ -12,10 +12,9 @@ function HeroBanner(props) {
         backgroundImage: `url(${Images.HeroBanner})`,
       }}
     >
-      <Container maxWidth="xl">
-
+      <Container maxWidth="lg">
         <div id="scroll-down-animation">
-          <Scroll to="features">
+          <Scroll to="guides">
             <span className="mouse">
               <span className="move"></span>
             </span>
