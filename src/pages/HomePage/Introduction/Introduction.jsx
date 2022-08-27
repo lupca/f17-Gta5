@@ -5,7 +5,7 @@ import "./Introduction.scss";
 
 const Introduction = () => {
   return (
-    <div className="video-intro-wrap">
+    <div className="video-intro-wrap" id='guides'>
       <div className="video-intro">
         <img src={Images.Men} alt="" className="men-img" />
         <div className="title">Hướng dẫn vào game</div>

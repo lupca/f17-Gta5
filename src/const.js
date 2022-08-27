@@ -13,7 +13,7 @@ export const navbarItems = [
     label: "Hướng dẫn",
   },
   {
-    path: "how-to-start",
+    path: "step-to-join",
     label: "Cách tham gia",
   },
   {
