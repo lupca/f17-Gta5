@@ -4,12 +4,14 @@
 
   .feature-image {
     padding: 1rem;
-    border: 2px solid #00D2F0;
+    border: 2px solid #00d2f0;
 
     img {
-
       width: 100%;
     }
+  }
+  .feature-thumbnails {
+    padding-right: 1rem;
   }
 }
 

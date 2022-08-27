@@ -16,14 +16,14 @@
       @content;
     }
   }
-
-  @if $breakpoint ==large-mobile {
-    @media only screen and (max-width: 767px) {
+  // and (min-width: 575px)
+  @if $breakpoint ==tablet {
+    @media only screen and (max-width: 992px) {
       @content;
     }
   }
 
-  @if $breakpoint ==small-mobile {
+  @if $breakpoint ==mobile {
     @media only screen and (max-width: 575px) {
       @content;
     }

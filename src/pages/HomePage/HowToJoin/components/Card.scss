@@ -9,6 +9,11 @@
   margin-top: 4rem;
   cursor: pointer;
   transition: all 0.5s ease-out 0.15s;
+  &:hover {
+    z-index: 7;
+    transform: scale(1.05);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  }
 
   @include respond.respond("desktop") {
     max-width: 55vw;
@@ -61,6 +66,8 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
+    display: flex;
+    align-items: center;
   }
 
   .register {
@@ -95,9 +102,63 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+  }
+}
+@include respond.respond("tablet") {
+  .card {
+    max-width: 75vw;
+    &.card1 {
+      top: 11vh;
+    }
+    &.card2 {
+      top: 36vh;
+    }
+  }
+}
+
+@include respond.respond("mobile") {
+  .card {
+    max-width: 75vw;
+    &.card1 {
+      top: 17vh;
+    }
+    &.card2 {
+      top: 36vh;
+    }
+    p.step {
+      font-size: 1rem;
+    }
+
+    p.step-title {
+      font-size: 1.3rem;
+    }
+
+    p.step-content {
+      font-size: 0.8rem;
+    }
+
     .button-action {
-      display: flex;
-      align-items: center;
+      height: 40px;
+      padding: 10px 1rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .register,
+    .download-launcher {
+      padding: 1rem 2rem;
+    }
+    .register {
+      .action-register {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      p.step-content {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0.5rem;
+      }
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "src/styles/abstracts/mixins" as respond;
+
 .hero-banner {
   background-color: #ffffff;
   overflow: visible;
@@ -5,19 +7,33 @@
   background-position: center;
   position: relative;
   min-height: 100vh;
-  .hero-banner-title {
-    // font-family: "Allerta Stencil";
-    padding-top: 10rem;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 150px;
-    line-height: 192px;
-    text-align: center;
-
-    color: #ffffff;
-
-    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.8);
+  background-image: url("/assets/images/BannerHero.png");
+  .text-banner {
+    display: none;
   }
+  @include respond.respond("tablet") {
+    background-image: url("/assets/images/herobg.png");
+    background-position: 70% 75%;
+    .text-banner {
+      display: block;
+      width: 100vw;
+      padding-top: 35vh;
+    }
+  }
+
+  // .hero-banner-title {
+  //   // font-family: "Allerta Stencil";
+  //   padding-top: 10rem;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 150px;
+  //   line-height: 192px;
+  //   text-align: center;
+
+  //   color: #ffffff;
+
+  //   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.8);
+  // }
 }
 
 #scroll-down-animation {
@@ -63,10 +79,5 @@
   100% {
     transform: translate(0, 80px) rotate(45deg);
     opacity: 0;
-  }
-}
-@media screen and (max-width: 700px) {
-  .hero-banner .hero-banner-title {
-    font-size: 45px;
   }
 }

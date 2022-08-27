@@ -1,6 +1,7 @@
 import logo from "./F17City.png";
 import BgBanner from "./banner.jpg";
 import HeroBanner from "./BannerHero.png";
+import TextHeroBanner from "./text.png";
 import BgContent from "./BG.png";
 import Vector from "./Vector.png";
 import Men from "./men1.png";
@@ -35,6 +36,7 @@ const Images = {
   Women,
   Vector,
   CallToAction,
+  TextHeroBanner,
   PaymentMethod: {
     Momo: Momo,
   },

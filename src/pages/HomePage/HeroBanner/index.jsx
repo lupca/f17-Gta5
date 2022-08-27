@@ -3,15 +3,10 @@ import Images from "assets/images";
 import "./HeroBanner.scss";
 import { Container } from "@mui/material";
 import { Link as Scroll } from "react-scroll";
-function HeroBanner(props) {
+function HeroBanner() {
   return (
-    <div
-      id="home"
-      className="hero-banner"
-      style={{
-        backgroundImage: `url(${Images.HeroBanner})`,
-      }}
-    >
+    <div id="home" className="hero-banner">
+      <img src={Images.TextHeroBanner} alt="F17" className="text-banner" />
       <Container maxWidth="lg">
         <div id="scroll-down-animation">
           <Scroll to="guides">
@@ -24,7 +19,5 @@ function HeroBanner(props) {
     </div>
   );
 }
-
-HeroBanner.propTypes = {};
 
 export default HeroBanner;
