@@ -31,7 +31,6 @@
 
   .MuiTablePagination-actions {
     margin-left: 0 !important;
-<<<<<<< HEAD
     @include respond.respond("mobile") {
       button {
         padding: 0;
@@ -39,7 +38,3 @@
     }
   }
 }
-=======
-  }
-}
->>>>>>> develop
