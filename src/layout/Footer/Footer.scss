@@ -1,4 +1,4 @@
-@use "../../styles/var.scss" as var;
+@use "src/styles/var.scss" as var;
 
 footer {
   background-color: #222636;
@@ -17,7 +17,7 @@ footer {
     right: 0;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     width: 100%;
 
     .text {
@@ -29,7 +29,7 @@ footer {
     .list-social {
       display: flex;
       align-items: center;
-      justify-content: end;
+      justify-content: flex-end;
       margin: 1rem;
 
       img {
