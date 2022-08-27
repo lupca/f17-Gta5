@@ -1,5 +1,5 @@
 import Images from "assets/images";
-import { VideoYoutube } from "components";
+import {VideoYoutube} from "components";
 import React from "react";
 import "./Introduction.scss";
 
