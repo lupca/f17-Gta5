@@ -1,6 +1,8 @@
+@use "src/styles/abstracts/mixins" as respond;
+
 .videos {
   .list-video-thumbnail {
-    padding: 1rem;
+    padding-top: 1rem;
     // max-height: 543px;
     overflow-y: hidden;
 
@@ -29,5 +31,10 @@
 
   .MuiTablePagination-actions {
     margin-left: 0 !important;
+    @include respond.respond("mobile") {
+      button {
+        padding: 0;
+      }
+    }
   }
 }

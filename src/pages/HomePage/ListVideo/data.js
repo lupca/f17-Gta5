@@ -3,7 +3,7 @@ export const listTab = [
     key: "newest",
     label: "Mới nhất",
     videoIds: [
-      "w_QuO-CuID8",
+      "5-WNjBfF4_o",
       "tzkmSXQQQaQ",
       "Llw9Q6akRo4",
       "MzCbEdtNbJ0",
@@ -13,16 +13,22 @@ export const listTab = [
   {
     key: "event",
     label: "Sự kiện",
-    videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
+    videoIds: ["oXlTNoeNLw8", "exPZfKfSqmQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
   },
   {
     key: "guides",
     label: "Hướng dẫn",
-    videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
+    videoIds: [
+      "H42-XWOqGBY",
+      "Utl5suY-yLI",
+      "-uFQzcY7YHc",
+      "w_QuO-CuID8",
+      "exPZfKfSqmQ",
+    ],
   },
   {
     key: "share",
     label: "Chia sẻ",
-    videoIds: ["HM2nQ9wMwHo", "FnV71obktpQ", "-uFQzcY7YHc", "w_QuO-CuID8"],
+    videoIds: ["lo4vheK2DHE", "FnV71obktpQ", "-uFQzcY7YHc"],
   },
 ];

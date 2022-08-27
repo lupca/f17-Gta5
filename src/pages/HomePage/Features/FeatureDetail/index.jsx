@@ -1,16 +1,16 @@
-import {Container, Grid} from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Images from "assets/images";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import TabFeature from "./components/TabFeature";
-import './FeatureDetail.scss'
+import "./FeatureDetail.scss";
 
 const FeatureDetail = () => {
   const [selectTab, setSelectTab] = useState(0);
   return (
     <Container maxWidth="lg">
       <div className="feature-detail">
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={3}>
+        <Grid container columnSpacing={{ xs: 0, sm: 3, md: 4 }}>
+          <Grid item xs={12} sm={4}>
             <div className="feature-thumbnails ">
               {listTab.map((tab, index) => (
                 <div key={tab.key} onClick={() => setSelectTab(index)}>
@@ -19,7 +19,7 @@ const FeatureDetail = () => {
               ))}
             </div>
           </Grid>
-          <Grid item xs={0} sm={9}>
+          <Grid item xs={0} sm={8}>
             <div className="feature-image">
               <img src={listTab[selectTab].imgFeature} alt="feature" />
             </div>
