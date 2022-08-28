@@ -19,6 +19,7 @@ const ListVideoContent = ({ videoIds }) => {
   };
   useEffect(() => {
     setSelectedVideo(videoIds[0]);
+    setPage(0);
     setListCurrentVideo(videoIds.slice(0, PAGE_SIZE));
   }, [videoIds]);
 

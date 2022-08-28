@@ -54,7 +54,7 @@ const Images = {
     {
       image: Feature2,
       content:
-        "Each round, you and 15 other contestants compete toescape a deadly island filled with monsters.",
+        "Each round, you and 15 other contestants compete toescape a deadly island filled with monsters. Each round, you and 15 other contestants compete toescape a deadly island filled with monsters.",
     },
     {
       image: Feature1,
