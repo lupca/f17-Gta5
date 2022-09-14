@@ -224,7 +224,7 @@ const PaymentForm = () => {
       <Grid item sx={{mb: 3}}>
         <Card variant="outlined" sx={{p: 2, borderRadius: "1rem" }}>
           <Discount/>
-          <div className="payment-form__discount-check-user" sx={{mt: "3rem"}}>
+          <Box className="payment-form__discount-check-user" sx={{mt: "3rem"}}>
             <span className="payment-form__img" id="basic-addon1">
               <PersonIcon className="payment-form__discount-icon" />
             </span>
@@ -232,7 +232,7 @@ const PaymentForm = () => {
             <Button variant="contained" onClick={(e) => onclickCheckUser()} className="payment-form__discount-btlchecking-user" type="button" data-mdb-ripple-color="dark">
               Check
             </Button>
-          </div>
+          </Box>
           { player ? <strong><p className='payment-form__player-name'> { player.name } </p></strong> : <></> }
           <FormControl variant="standard" sx={{ mt: 1, minWidth: 120, width: "100%" }}>
             <InputLabel id="demo-simple-select-standard-label">Chọn phương thức thanh toán</InputLabel>

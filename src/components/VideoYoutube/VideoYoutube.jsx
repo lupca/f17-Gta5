@@ -9,7 +9,7 @@ export const VideoYoutube = ({ videoId, title }) => {
         <iframe
           width="854"
           height="480"
-          src={`http://www.youtube.com/embed/${videoId}?rel=0&hd=1`}
+          src={`https://www.youtube.com/embed/${videoId}?rel=0&hd=1`}
           frameBorder="0"
           allowFullScreen
           title={title}
