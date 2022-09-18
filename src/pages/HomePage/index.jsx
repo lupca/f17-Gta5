@@ -19,9 +19,9 @@ const HomePage = () => {
         }}>
           {/* <img src={Images.BgContent} alt='' className="bg-image" /> */}
           <img src={Images.Vector} alt='' className="vector-image" />
-          <Introduction />
-          <HowToJoin />
           <Features />
+          <HowToJoin />
+          <Introduction />
         </div>
         <ListVideo />
 
