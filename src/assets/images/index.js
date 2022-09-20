@@ -50,9 +50,11 @@ const Images = {
     feat3,
     feat4,
   },
+  // Nội dung slideshow
   Features: [
     {
       image: Feature2,
+      // Thay đổi text ở dòng dưới.
       content:
         "Each round, you and 15 other contestants compete toescape a deadly island filled with monsters. Each round, you and 15 other contestants compete toescape a deadly island filled with monsters.",
     },
