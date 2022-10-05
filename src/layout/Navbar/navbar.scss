@@ -21,10 +21,10 @@
 }
 
 .gpt3__navbar-links_logo {
-  margin-right: 2rem;
+  //margin-right: 2rem;
 
   img {
-    width: 120px;
+    width: 240px;
     // height: 16.02px;
   }
 }
@@ -32,18 +32,99 @@
 .gpt3__navbar-links_container {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
 
   p {
     color: white;
     // color: var.$text-light;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 34px;
     line-height: 25px;
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
   }
+
+  p {
+    background-image: linear-gradient(
+                    to right,
+                    #ffde2a,
+                    #ffde2a 50%,
+                    white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  p:before {
+    content: '';
+    background: #ffde2a;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  p:hover {
+    background-position: 0;
+  }
+
+  p:hover::before {
+    width: 100%;
+  }
+
+  p {
+    --c: #fff; /* the color */
+    --b: .0em; /* border length*/
+    --d: 20px; /* the cube depth */
+
+    --_s: calc(var(--d) + var(--b));
+
+    color: var(--c);
+    //border: solid rgba(255, 222, 42, 0);
+    border: solid #ffde2a;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    transform: translate(calc(var(--d) / -1), var(--d));
+    clip-path: polygon(
+                    var(--d) 0%,
+                    var(--d) 0%,
+                    100% 0%,
+                    100% calc(100% - var(--d)),
+                    100% calc(100% - var(--d)),
+                    var(--d) calc(100% - var(--d))
+    );
+    transition: 0.5s;
+
+    &:hover {
+      transform: translate(0, 0);
+      clip-path: polygon(
+                      0% var(--d),
+                      var(--d) 0%,
+                      100% 0%,
+                      100% calc(100% - var(--d)),
+                      calc(100% - var(--d)) 100%,
+                      0% 100%
+      );
+    }
+  }
 }
+
+//p {
+//  font-family: system-ui, sans-serif;
+//  font-size: 3rem;
+//  margin:0;
+//  cursor: pointer;
+//  padding: 0 .1em;
+//}
 
 .gpt3__navbar-sign {
   display: flex;
@@ -70,7 +151,6 @@
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
-    margin: 1rem 0;
   }
 
   display: flex;

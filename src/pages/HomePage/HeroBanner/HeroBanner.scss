@@ -36,12 +36,33 @@
   // }
 }
 
+.action-scope {
+  position: absolute;
+  bottom: 110px;
+  right: 53%;
+}
+
+@include respond.respond("mobile") {
+  .action-scope {
+    bottom: 190px;
+    right: 10%;
+  }
+}
+
+@include respond.respond("native-tablet") {
+  .action-scope {
+    bottom: 180px;
+    right: 25%;
+  }
+}
+
 #scroll-down-animation {
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 .mouse {
   margin: 0 auto;
