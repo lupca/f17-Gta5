@@ -8,6 +8,7 @@ import './HomePage.scss'
 import HowToJoin from "./HowToJoin/HowToJoin";
 import Introduction from "./Introduction/Introduction";
 import ListVideo from "./ListVideo";
+import EventComponent from "./Event/Event";
 
 const HomePage = () => {
   return (
@@ -22,9 +23,9 @@ const HomePage = () => {
           <Features />
           <HowToJoin />
           <Introduction />
+          <EventComponent />
         </div>
         <ListVideo />
-
         <Footer />
 
       </>

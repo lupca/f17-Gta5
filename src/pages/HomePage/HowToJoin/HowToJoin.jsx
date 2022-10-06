@@ -19,7 +19,6 @@ const HowToJoin = () => {
         </div>
       </Container>
     </div>
-
   )
 }
 

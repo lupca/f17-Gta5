@@ -118,14 +118,6 @@
   }
 }
 
-//p {
-//  font-family: system-ui, sans-serif;
-//  font-size: 3rem;
-//  margin:0;
-//  cursor: pointer;
-//  padding: 0 .1em;
-//}
-
 .gpt3__navbar-sign {
   display: flex;
   justify-content: flex-end;
@@ -218,5 +210,69 @@
 
   .gpt3__navbar-menu_container-links-sign {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1501px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1405px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .gpt3__navbar-links_container {
+    p {
+      font-size: 15px;
+    }
   }
 }
