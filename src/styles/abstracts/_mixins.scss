@@ -16,7 +16,13 @@
       @content;
     }
   }
-  // and (min-width: 575px)
+
+  @if $breakpoint ==native-tablet {
+    @media only screen and (max-width: 992px) and (min-width: 575px) {
+      @content;
+    }
+  }
+
   @if $breakpoint ==tablet {
     @media only screen and (max-width: 992px) {
       @content;

@@ -34,7 +34,7 @@ const PaymentForm = () => {
   const [severityAlert, setSeverityAlert] = React.useState('error')
   useEffect(() => {
   }, [])
-  
+
   const createOrder = (data, actions) => {
     const ccService = new CurrencyConversionService(fcoin, 'USD')
     const amount = ccService.perform()
@@ -101,25 +101,25 @@ const PaymentForm = () => {
 
   const handleFcoinChange = (e) => {
     const fcoinValue = e.target.value
-    if (!fcoinValue){ 
+    if (!fcoinValue){
       setHelperTextFcoin("Vui lòng nhập số Fcoin")
       setFcoinError(true);
-     } 
-    else if (fcoinValue < 10){ 
+    }
+    else if (fcoinValue < 10){
       setHelperTextFcoin("Số Fcoin nạp phải lớn hơn 10")
       setFcoinError(true);
-     }
-     else if (fcoinValue > 10 && (fcoinValue % 10) !== 0) {
+    }
+    else if (fcoinValue > 10 && (fcoinValue % 10) !== 0) {
       setHelperTextFcoin("Số Fcoin phải là bội số của 10")
       setFcoinError(true);
-     }
+    }
     else
-     {
+    {
       setHelperTextFcoin('');
       setFcoinError(false);
       setFcoin(fcoinValue)
     }
-   }
+  }
 
   const validateForm = () => {
     if(!citizenId) {
@@ -128,7 +128,7 @@ const PaymentForm = () => {
     }
 
     if(fcoinError || !denominations) return false
-    
+
     return true
 
   }
@@ -144,41 +144,41 @@ const PaymentForm = () => {
 
     setMomoPayData(momoData)
   }
-  
-  // function getQrMomo(){
-    // const momoApi = new PaymentMomoApi()
 
-    // const data = {
-    //   amount,
-    //   note: "Thanh toán qua ví MoMo",
-    //   redirectUr: "https://google.com",
-    //   partnerName: "unnecessary",
-    // }
-    // return momoApi.loadPaymentMomo(data)
-    // .then(response => {
-      // const url = `https://momosv3.apimienphi.com/api/QRCode?phone=${response.phone}&amount=${}&note=${}`
-      // return <img src={url} />
-    // })
+  // function getQrMomo(){
+  // const momoApi = new PaymentMomoApi()
+
+  // const data = {
+  //   amount,
+  //   note: "Thanh toán qua ví MoMo",
+  //   redirectUr: "https://google.com",
+  //   partnerName: "unnecessary",
+  // }
+  // return momoApi.loadPaymentMomo(data)
+  // .then(response => {
+  // const url = `https://momosv3.apimienphi.com/api/QRCode?phone=${response.phone}&amount=${}&note=${}`
+  // return <img src={url} />
+  // })
   // }
 
   function onclickCheckUser () {
     const user = new UserApi()
-    if (citizenId === '/' || citizenId === '') {  
+    if (citizenId === '/' || citizenId === '') {
       return noticeWith("Nhân vật không được để trống.")
     }
 
     user.setParamsToUrl().searchBy({citizenId: citizenId})
-    .then(response => {
-      console.log(response)
-      if (response.code === 201){
-        setPlayer({})
-        noticeWith("Nhân vật không tồn tại.")
-      }
-      else {
-        setOpenNotice(false)
-        setPlayer(response.data)
-      }
-    })  
+        .then(response => {
+          console.log(response)
+          if (response.code === 201){
+            setPlayer({})
+            noticeWith("Nhân vật không tồn tại.")
+          }
+          else {
+            setOpenNotice(false)
+            setPlayer(response.data)
+          }
+        })
   }
 
   const handleNoticeClose = (event, reason) => {
@@ -188,116 +188,116 @@ const PaymentForm = () => {
   };
 
   const actionNotice = (
-    <React.Fragment>
-      <Button color="secondary" size="small" onClick={handleNoticeClose}>
-        UNDO
-      </Button>
-      <IconButton
-        size="small"
-        aria-label="close"
-        color="inherit"
-        onClick={handleNoticeClose}
-      >
-        <Close fontSize="small" />
-      </IconButton>
-    </React.Fragment>
+      <React.Fragment>
+        <Button color="secondary" size="small" onClick={handleNoticeClose}>
+          UNDO
+        </Button>
+        <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleNoticeClose}
+        >
+          <Close fontSize="small" />
+        </IconButton>
+      </React.Fragment>
   );
 
   return (
-    <Grid
-    container
-    spacing={0}
-    direction="column"
-    alignItems="center"
-    justifyContent="center"
-    className="payment-form"
-    >
-      <Snackbar
-        anchorOrigin={{ vertical, horizontal }}
-        open={openNotice}
-        autoHideDuration={6000}
-        onClose={handleNoticeClose}
-        action={actionNotice}
+      <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          className="payment-form"
       >
-        <Alert severity={severityAlert}>{messageNotice}</Alert>
-      </Snackbar>
-      <Grid item sx={{mb: 3}}>
-        <Card variant="outlined" sx={{p: 2, borderRadius: "1rem" }}>
-          <Discount/>
-          <Box className="payment-form__discount-check-user" sx={{mt: "3rem"}}>
+        <Snackbar
+            anchorOrigin={{ vertical, horizontal }}
+            open={openNotice}
+            autoHideDuration={6000}
+            onClose={handleNoticeClose}
+            action={actionNotice}
+        >
+          <Alert severity={severityAlert}>{messageNotice}</Alert>
+        </Snackbar>
+        <Grid item sx={{mb: 3}}>
+          <Card variant="outlined" sx={{p: 2, borderRadius: "1rem" }}>
+            <Discount/>
+            <Box className="payment-form__discount-check-user" sx={{mt: "3rem"}}>
             <span className="payment-form__img" id="basic-addon1">
               <PersonIcon className="payment-form__discount-icon" />
             </span>
-            <input type="text" onChange={event => setCitizenId('/' + event.target.value)} className="payment-form__discount-citizenid" placeholder="ID nhân vật" name="citizenid" aria-label="Username" aria-describedby="basic-addon1" />
-            <Button variant="contained" onClick={(e) => onclickCheckUser()} className="payment-form__discount-btlchecking-user" type="button" data-mdb-ripple-color="dark">
-              Check
-            </Button>
-          </Box>
-          { player ? <strong><p className='payment-form__player-name'> { player.name } </p></strong> : <></> }
-          <FormControl variant="standard" sx={{ mt: 1, minWidth: 120, width: "100%" }}>
-            <InputLabel id="demo-simple-select-standard-label">Chọn phương thức thanh toán</InputLabel>
-            <Select
-              labelId="demo-simple-select-standard-label"
-              id="demo-simple-select-standard"
-              value={denominations}
-              onChange={(e) => {setDenominations(e.target.value)}}
-              label="method payment"
-              error={ !denominations }
-            >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value={"USD"}>Paypal</MenuItem>
-              <MenuItem value={"VND"}>Momo</MenuItem>
-            </Select>
-          <FormHelperText error={ !denominations }>{ !denominations ? "Vui lòng chọn phương thức thanh toán!" : ''}</FormHelperText>
+              <input type="text" onChange={event => setCitizenId('/' + event.target.value)} className="payment-form__discount-citizenid" placeholder="ID nhân vật" name="citizenid" aria-label="Username" aria-describedby="basic-addon1" />
+              <Button variant="contained" onClick={(e) => onclickCheckUser()} className="payment-form__discount-btlchecking-user" type="button" data-mdb-ripple-color="dark">
+                Check
+              </Button>
+            </Box>
+            { player ? <strong><p className='payment-form__player-name'> { player.name } </p></strong> : <></> }
+            <FormControl variant="standard" sx={{ mt: 1, minWidth: 120, width: "100%" }}>
+              <InputLabel id="demo-simple-select-standard-label">Chọn phương thức thanh toán</InputLabel>
+              <Select
+                  labelId="demo-simple-select-standard-label"
+                  id="demo-simple-select-standard"
+                  value={denominations}
+                  onChange={(e) => {setDenominations(e.target.value)}}
+                  label="method payment"
+                  error={ !denominations }
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={"USD"}>Paypal</MenuItem>
+                <MenuItem value={"VND"}>Momo</MenuItem>
+              </Select>
+              <FormHelperText error={ !denominations }>{ !denominations ? "Vui lòng chọn phương thức thanh toán!" : ''}</FormHelperText>
 
-          </FormControl>
-          { denominations === 'VND' ? <DenominationVND /> : <DenominationUSD/> }
-          <TextField
-          type="number"
-          pattern='[0-9]*'
-          onChange={handleFcoinChange}
-          error={fcoinError}
-          sx={{mt: 3, width: "100%"}}
-            label="Số fcoin muốn nạp"
-            InputProps={{
-              endAdornment: (
-                <AttachMoneyIcon />
-              )
-            }}
-          />
-          <FormHelperText error={fcoinError}>{helperTextFcoin}</FormHelperText>
-          <Button sx={ {mt: 3, float: "right"} } onClick={submitPayment} variant="contained">Tiếp tục</Button>
+            </FormControl>
+            { denominations === 'VND' ? <DenominationVND /> : <DenominationUSD/> }
+            <TextField
+                type="number"
+                pattern='[0-9]*'
+                onChange={handleFcoinChange}
+                error={fcoinError}
+                sx={{mt: 3, width: "100%"}}
+                label="Số fcoin muốn nạp"
+                InputProps={{
+                  endAdornment: (
+                      <AttachMoneyIcon />
+                  )
+                }}
+            />
+            <FormHelperText error={fcoinError}>{helperTextFcoin}</FormHelperText>
+            <Button sx={ {mt: 3, float: "right"} } onClick={submitPayment} variant="contained">Tiếp tục</Button>
 
-        </Card>
-      </Grid>  
-      <Modal
-        open={openModal}
-        onClose={handleCloseModal}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        className="modal"
+          </Card>
+        </Grid>
+        <Modal
+            open={openModal}
+            onClose={handleCloseModal}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="modal"
         >
-        <Box sx={modalStyle}>
-          <Typography id="modal-modal-title" className="modal__modal-title" variant="h6" component="h2" textAlign={'center'}>
-          { denominations === 'VND' ? "THANH TOÁN VỚI MOMO" : "Thanh toán với paypal" }
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            { denominations === 'VND' ? 
-              <div>
-                <img src={`https://momosv3.apimienphi.com/api/QRCode?phone=${momoPayData.phone}&amount=${momoPayData.amount}&note=${momoPayData.note}`} />
-                <Typography sx={{mt: 1}} >Bạn cần phải chuyển {momoPayData.amount} VND để nhận { fcoin } fcoin.</Typography>
-              </div>
-              : 
-              <PayPalScriptProvider options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
-                <PayPalButtons style={{ layout: "horizontal" }} createOrder={(data, actions) => createOrder(data, actions)} onApprove={(data, actions) => onApprove(data, actions)} />
-              </PayPalScriptProvider>
-            }
-          </Typography> 
-        </Box> 
-      </Modal>
-    </Grid> 
+          <Box sx={modalStyle}>
+            <Typography id="modal-modal-title" className="modal__modal-title" variant="h6" component="h2" textAlign={'center'}>
+              { denominations === 'VND' ? "THANH TOÁN VỚI MOMO" : "Thanh toán với paypal" }
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              { denominations === 'VND' ?
+                  <div>
+                    <img src={`https://momosv3.apimienphi.com/api/QRCode?phone=${momoPayData.phone}&amount=${momoPayData.amount}&note=${momoPayData.note}`} />
+                    <Typography sx={{mt: 1}} >Bạn cần phải chuyển {momoPayData.amount} VND để nhận { fcoin } fcoin.</Typography>
+                  </div>
+                  :
+                  <PayPalScriptProvider options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
+                    <PayPalButtons style={{ layout: "horizontal" }} createOrder={(data, actions) => createOrder(data, actions)} onApprove={(data, actions) => onApprove(data, actions)} />
+                  </PayPalScriptProvider>
+              }
+            </Typography>
+          </Box>
+        </Modal>
+      </Grid>
   );
 }
 
