@@ -11,6 +11,8 @@ FROM development AS build
 RUN yarn build
 FROM nginx:alpine
 COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/.nginx/nginx_ssl.conf /etc/nginx/conf.d/ssl.conf
+
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY --from=build /app/build .
