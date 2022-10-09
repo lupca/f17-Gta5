@@ -82,4 +82,14 @@ const listTab = [
     ],
     thumbnail: Images.FeatureDetail.hot,
   },
+  {
+    key: "activity",
+    label: "Hoạt động",
+    contents: ["+ Hoạt động thành phố"],
+    imgFeatures: [
+      Images.FeatureDetail.feat1,
+      Images.FeatureDetail.feat2
+    ],
+    thumbnail: Images.FeatureDetail.gameController,
+  },
 ];
