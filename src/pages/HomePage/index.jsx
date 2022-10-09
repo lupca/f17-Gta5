@@ -21,9 +21,9 @@ const HomePage = () => {
           {/* <img src={Images.BgContent} alt='' className="bg-image" /> */}
           <img src={Images.Vector} alt='' className="vector-image" />
           <Features />
+          <EventComponent />
           <HowToJoin />
           <Introduction />
-          <EventComponent />
         </div>
         <ListVideo />
         <Footer />

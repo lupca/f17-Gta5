@@ -75,6 +75,7 @@
     .tab-thumbnail {
       &.event {
         transform: scale(0.5);
+        right: -4rem;
       }
       &.store {
         transform: scale(0.5);

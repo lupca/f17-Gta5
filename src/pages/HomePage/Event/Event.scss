@@ -4,11 +4,27 @@
   justify-content: space-between;
   width: 100%;
   transform: skewY(-2deg);
-  padding-bottom: 10rem;
+  padding: 6rem 0;
+
+  @media only screen and (max-width: 970px) { 
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 
   .css-1ekb41w {
     padding-left: 24px;
     padding-right: 24px;
+
+    @media only screen and (max-width: 970px) { 
+      width: 100%;
+      margin-left: auto;
+      box-sizing: border-box;
+      margin-right: auto;
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   .how-to-start-header {
@@ -90,4 +106,3 @@
     }
   }
 }
-

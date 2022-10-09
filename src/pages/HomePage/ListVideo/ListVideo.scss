@@ -15,10 +15,19 @@
     width: 100%;
 
     button {
+      z-index: 7;
       border-radius: 10px;
+
       @include respond.respond("mobile") {
         border-radius: 10px;
-        padding: 10px 6px;
+        padding: 14.5px 6px;
+        font-size: 50%;
+      }
+
+      @include respond.respond("large-mobile") {
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 75%;
       }
     }
 

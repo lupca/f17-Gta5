@@ -1,5 +1,5 @@
 .video-intro-wrap {
-  padding-bottom: 190px;
+  padding-bottom: 10rem;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -32,6 +32,38 @@
       color: #8fe4ff;
       margin-bottom: 2rem;
     }
+  }
+
+  @keyframes border {
+    0%, 100% {
+      -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+      clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+    }
+    50% {
+      -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+      clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+    }
+  }
+  
+  .videoWrapper:after {
+    animation-delay: -5s;
+    background-color: #93e1d8;
+    clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  }
+  
+  .videoWrapper:before {
+    background-color: #AA4465;
+    clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+  }
+  
+  
+  .videoWrapper:hover:after {
+    //animation-delay: 0.1s;
+  }
+  
+  .videoWrapper:hover:before, .videoWrapper:hover:after {
+  
+    //animation-duration: 0.2s;
   }
 }
 
