@@ -2,6 +2,11 @@
 
 .payment-form {
   &__discount-momo {
+    background-color: #EE4D2D;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+
     img {
       height: 30px;
       width: 30px;
@@ -19,7 +24,7 @@
     align-items: center;
   }
   &__momo-content {
-    color: red;
+    color: white;
   }
   &__discount-title {
     display: flex;

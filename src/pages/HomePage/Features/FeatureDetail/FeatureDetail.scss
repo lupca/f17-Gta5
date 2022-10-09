@@ -1,0 +1,27 @@
+.feature-detail {
+  // padding-bottom: 190px;
+  padding-top: 80px;
+
+  .feature-image {
+    padding: 1rem;
+    border: 2px solid #00d2f0;
+
+    img {
+      width: 100%;
+    }
+  }
+  .feature-thumbnails {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .feature-detail {
+    // padding-bottom: 90px;
+    padding-top: 30px;
+
+    .feature-image {
+      display: none;
+    }
+  }
+}

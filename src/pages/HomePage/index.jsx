@@ -8,6 +8,7 @@ import './HomePage.scss'
 import HowToJoin from "./HowToJoin/HowToJoin";
 import Introduction from "./Introduction/Introduction";
 import ListVideo from "./ListVideo";
+import EventComponent from "./Event/Event";
 
 const HomePage = () => {
   return (
@@ -15,16 +16,18 @@ const HomePage = () => {
       <>
         <HeroBanner />
         <div className="home-container" style={{
-          // backgroundImage: `url(${Images.BgContent}`,
+          backgroundImage: `url(${Images.BgContent}`,
         }}>
-          <img src={Images.BgContent} alt='' className="bg-image" />
+          {/* <img src={Images.BgContent} alt='' className="bg-image" /> */}
           <img src={Images.Vector} alt='' className="vector-image" />
-          <Introduction />
-          <HowToJoin />
           <Features />
-          <ListVideo />
-          {/* <Footer /> */}
+          <EventComponent />
+          <HowToJoin />
+          <Introduction />
         </div>
+        <ListVideo />
+        <Footer />
+
       </>
     </MainLayout>
   );

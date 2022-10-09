@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer/Footer";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import {animateScroll} from "react-scroll";
 import "./MainLayout.scss";

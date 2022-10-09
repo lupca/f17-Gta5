@@ -1,19 +1,31 @@
 .action-button {
   position: relative;
   width: fit-content;
+  align-self: end;
+  justify-self: center;
+
+  margin: 0 auto;
+
+  transition: all 0.3s ease-out 0.15s;
+  &:hover {
+    z-index: 7;
+    transform: scale(1.1);
+  }
 
   img {
-    width: 300px;
+    width: 400px;
+    cursor: pointer;
   }
 
   p {
+    cursor: pointer;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
     // font-family: 'Chakra Petch';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;

@@ -1,31 +1,34 @@
-import React from "react";
-import {Element} from "react-scroll";
-import {Carousel} from '3d-react-carousal';
-import {Container} from "@mui/material";
-import './Features.scss'
+import React, { useState } from "react";
+import { Element } from "react-scroll";
+import { Carousel } from "3d-react-carousal";
+import "./Features.scss";
 import Images from "assets/images";
+import FeatureDetail from "./FeatureDetail";
+import { Container } from "@mui/material";
+
+let slides = Images.Features.map((image, index) => (
+  <img key={index} src={image.image} alt={image.content} />
+));
 
 const Features = () => {
+  const [selectedImage, setSelectedImage] = useState(0);
   const onSlideChange = function (index) {
-    console.log("callback", index);
-  }
-  let slides = Images.Features.map((image, index) => <img key={index} src={image} alt={index} />)
+    setSelectedImage(index);
+  };
   return (
     <Element name="features" className="element">
-      <div className="wrap-feature" style={{minHeight: "100vh"}}>Features
+      <div className="wrap-feature">
         <Carousel slides={slides} onSlideChange={onSlideChange} />
-        <p style={{marginTop: 26}}>
-          Each round, you and 15 other contestants
-          compete to
-          escape a deadly island filled with monsters.
-
-        </p>
+        <Container maxWidth="lg">
+          <p style={{}}>{Images.Features[selectedImage].content}</p>
+        </Container>
         <div className="divider">
           <div className="item pink"></div>
           <div className="item blue"></div>
           <div className="item cyan"></div>
         </div>
       </div>
+      <FeatureDetail />
     </Element>
   );
 };
