@@ -3,6 +3,8 @@ import Images from "assets/images";
 import React, { useState } from "react";
 import TabFeature from "./components/TabFeature";
 import "./FeatureDetail.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const FeatureDetail = () => {
   const [selectTab, setSelectTab] = useState(0);
@@ -21,7 +23,13 @@ const FeatureDetail = () => {
           </Grid>
           <Grid item xs={0} sm={8}>
             <div className="feature-image">
-              <img src={listTab[selectTab].imgFeature} alt="feature" />
+              <Carousel interval={true} showThumbs={true} emulateTouch={true}>
+                {listTab[selectTab].imgFeatures.map((img, index) => (
+                  <div key={index}>
+                    <img src={img}/>
+                  </div>
+                ))}
+            </Carousel>
             </div>
           </Grid>
         </Grid>
@@ -36,28 +44,42 @@ const listTab = [
     key: "event",
     label: "Sự kiện",
     contents: ["+ 30 sự kiện mới"],
-    imgFeature: Images.FeatureDetail.feat1,
+    imgFeatures: [
+      Images.FeatureDetail.feat1,
+      Images.FeatureDetail.feat2,
+      Images.FeatureDetail.feat3,
+      Images.FeatureDetail.feat4,
+    ],
     thumbnail: Images.FeatureDetail.event,
   },
   {
     key: "store",
     label: "Cửa hàng",
     contents: ["+ Nâng cấp xe", "+ Thay đổi diện mạo"],
-    imgFeature: Images.FeatureDetail.feat2,
+    imgFeatures: [
+      Images.FeatureDetail.feat3,
+      Images.FeatureDetail.feat4,
+    ],
     thumbnail: Images.FeatureDetail.store,
   },
   {
     key: "sale",
     label: "Khuyến mãi",
     contents: ["+ Ưu đãi tháng 8"],
-    imgFeature: Images.FeatureDetail.feat3,
+    imgFeatures: [
+      Images.FeatureDetail.feat1,
+      Images.FeatureDetail.feat2
+    ],
     thumbnail: Images.FeatureDetail.sale,
   },
   {
     key: "hot",
     label: "Tiêu điểm",
     contents: ["+ Thông tin nổi bật"],
-    imgFeature: Images.FeatureDetail.feat4,
+    imgFeatures: [
+      Images.FeatureDetail.feat3,
+      Images.FeatureDetail.feat4
+    ],
     thumbnail: Images.FeatureDetail.hot,
   },
 ];
