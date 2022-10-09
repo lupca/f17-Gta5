@@ -7,19 +7,6 @@
   videoWrapper-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
 }
 
-.videoWrapper:after, .videoWrapper:before {
-  mix-blend-mode: multiply;
-  filter: none;
-  z-index: -1;
-  content: '';
-  width: calc(100% + (50px * 2));
-  height: calc(100% + (50px * 2));
-  position: absolute;
-  display: block;
-  animation: border 10s ease-in-out infinite;
-  transform: translateX(-50px) translateY(-50px);
-}
-
 .videoWrapper iframe {
   position: absolute;
   top: 0;

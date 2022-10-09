@@ -34,26 +34,44 @@
     }
   }
 
-  @keyframes border {
-    0%, 100% {
-      -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-      clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+  .videoWrapper {
+    @keyframes border {
+      0%, 100% {
+        -webkit-clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+        clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
+      }
+      50% {
+        -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+        clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+      }
     }
-    50% {
-      -webkit-clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
-      clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+
+    &::before, &::after {
+      mix-blend-mode: multiply;
+      filter: none;
+      z-index: -1;
+      content: '';
+      width: calc(100% + (50px * 2));
+      height: calc(100% + (50px * 2));
+      position: absolute;
+      display: block;
+      animation: border 10s ease-in-out infinite;
+      transform: translateX(-50px) translateY(-50px);
+      @media only screen and (max-width: 750px) {
+        width: calc(100% + (15px * 2));
+        height: calc(100% + (15px * 2));
+        transform: translateX(-15px) translateY(-15px);
+      }
     }
-  }
-  
-  .videoWrapper:after {
-    animation-delay: -5s;
-    background-color: #93e1d8;
-    clip-path: polygon(0 0, calc(100% - (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 100%, calc(0% + (33.3333333333px)) calc(100% - (33.3333333333px)));
-  }
-  
-  .videoWrapper:before {
-    background-color: #AA4465;
-    clip-path: polygon(calc(0% + (33.3333333333px)) calc(0% + (33.3333333333px)), 100% 0, calc(100% - (33.3333333333px)) calc(100% - (33.3333333333px)), 0 100%);
+
+    &::before {
+      background-color: #AA4465;
+    }
+
+    &::after {
+      animation-delay: -5s;
+      background-color: #93e1d8;
+    }
   }
   
   
