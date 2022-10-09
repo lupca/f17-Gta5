@@ -12,6 +12,7 @@ import Momo from "./paymentMethods/momo.png";
 import Feature1 from "./features/feature1.png";
 import Feature2 from "./features/feature2.png";
 import Feature3 from "./features/feature3.png";
+import gameController from "./features/game-controller.png";
 import event from "./features/event.png";
 import hot from "./features/hot.png";
 import sale from "./features/sale.png";
@@ -41,6 +42,7 @@ const Images = {
     Momo: Momo,
   },
   FeatureDetail: {
+    gameController,
     event,
     sale,
     hot,
