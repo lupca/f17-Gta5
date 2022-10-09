@@ -36,12 +36,17 @@
   }
 
   @if $breakpoint ==mobile {
-    @media only screen and (min-with: 450) and (max-width: 575px) {
+    @media only screen and (max-width: 575px) {
       @content;
     }
   }
 
   @if $breakpoint ==small-mobile {
+    @media only screen and (min-with: 450) and (max-width: 575px) {
+    }
+  }
+
+  @if $breakpoint ==very-small-mobile {
     @media only screen and (max-width: 450px) {
       @content;
     }

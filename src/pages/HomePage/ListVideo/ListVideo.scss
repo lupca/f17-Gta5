@@ -18,13 +18,13 @@
       z-index: 7;
       border-radius: 10px;
 
-      @include respond.respond("small-mobile") {
+      @include respond.respond("very-small-mobile") {
         border-radius: 10px;
         padding: 15.5px 6px;
         font-size: 8px;
       }
 
-      @include respond.respond("mobile") {
+      @include respond.respond("small-mobile") {
         border-radius: 10px;
         padding: 14.5px 6px;
         font-size: 50%;
@@ -34,6 +34,12 @@
         border-radius: 10px;
         padding: 12px;
         font-size: 75%;
+      }
+
+      @media only screen and (max-width: 393px) {
+        border-radius: 10px;
+        padding: 18px 6px;
+        font-size: 5px;
       }
     }
 
