@@ -2,13 +2,13 @@ FROM node:lts AS development
 WORKDIR /app
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
-RUN yarn
+RUN npm install --force
 COPY . /app
 ENV CI=false
 ENV PORT=3000
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
 FROM development AS build
-RUN yarn build
+RUN npm run build
 FROM nginx:alpine
 COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/.nginx/nginx_ssl.conf /etc/nginx/conf.d/ssl.conf
