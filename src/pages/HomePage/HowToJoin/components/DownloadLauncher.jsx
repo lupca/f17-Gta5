@@ -5,7 +5,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const DownloadLauncher = ({onClick, isSelected}) => {
   const downloadHandle = () => {
-    window.open("https://www.youtube.com/watch?v=tzkmSXQQQaQ&t=1s")
+    window.open("https://runtime.fivem.net/client/FiveM.exe")
   }
   return (
     <div className={`card card2 ${isSelected}`} onClick={onClick}>
@@ -13,7 +13,7 @@ const DownloadLauncher = ({onClick, isSelected}) => {
         <div className="step-download">
           <p className="step">Bước 2</p>
           <p className="step-title">
-            Tải laucher
+            Tải FiveM
           </p>
         </div>
         <div className="button-action" onClick={downloadHandle}>

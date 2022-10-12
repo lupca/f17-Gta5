@@ -43,7 +43,7 @@ const listTab = [
   {
     key: "event",
     label: "Sự kiện",
-    contents: ["+ 30 sự kiện mới"],
+    contents: ["+ Các sự kiện liên tục hỗ trợ công dân mới."],
     imgFeatures: [
       Images.FeatureDetail.feat1,
       Images.FeatureDetail.feat2,
@@ -54,8 +54,8 @@ const listTab = [
   },
   {
     key: "store",
-    label: "Cửa hàng",
-    contents: ["+ Nâng cấp xe", "+ Thay đổi diện mạo"],
+    label: "Nghề nghiệp",
+    contents: ["+ Các nghề đa dạng, chuyên sâu, có cấp độ."],
     imgFeatures: [
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4,
@@ -64,28 +64,29 @@ const listTab = [
   },
   {
     key: "sale",
-    label: "Khuyến mãi",
-    contents: ["+ Ưu đãi tháng 8"],
+    label: "Nghề bẩn",
+    contents: ["+ Hồi hợp, kịch tính, thưởng to xứng đáng với công sức."],
     imgFeatures: [
-      Images.FeatureDetail.feat1,
-      Images.FeatureDetail.feat2
+      Images.FeatureDetail.caydongho,
+      Images.FeatureDetail.haithaomoc,
+      Images.FeatureDetail.ruatien,
     ],
     thumbnail: Images.FeatureDetail.sale,
   },
   {
     key: "hot",
-    label: "Tiêu điểm",
-    contents: ["+ Thông tin nổi bật"],
+    label: "Hoạt động vui chơi",
+    contents: ["+ Nơi giao lưu, xả stress sau những phi vụ."],
     imgFeatures: [
-      Images.FeatureDetail.feat3,
-      Images.FeatureDetail.feat4
+      Images.FeatureDetail.featsanbongda,
+      Images.FeatureDetail.featsangolf
     ],
     thumbnail: Images.FeatureDetail.hot,
   },
   {
     key: "activity",
-    label: "Hoạt động",
-    contents: ["+ Hoạt động thành phố"],
+    label: "Địa điểm thành phố",
+    contents: ["+ Các điểm ẩn chờ công dân khám phá."],
     imgFeatures: [
       Images.FeatureDetail.feat1,
       Images.FeatureDetail.feat2

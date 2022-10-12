@@ -4,19 +4,19 @@ import "./Card.scss";
 
 const Register = ({onClick, isSelected}) => {
   const registerHandle = () => {
-    window.open("https://www.youtube.com/watch?v=tzkmSXQQQaQ&t=1s")
+    window.open("https://store.steampowered.com/agecheck/app/271590/")
   }
   return (
     <div className={`card card1 ${isSelected}`} onClick={onClick}>
       <div className="register">
         <div className="step-register">
           <p className="step">Bước 1</p>
-          <p className="step-title">Đăng ký tài khoản</p>
+          <p className="step-title">Game bản quyền</p>
         </div>
         <div className="action-register" onClick={registerHandle}>
-          <div className="button-action">+ Đăng ký ngay</div>
+          <div className="button-action">+ Mua game</div>
           <p className="step-content">
-            bạn cần có bản quyền Grand theft auto v
+            Bạn cần phải mua game trên steam hoặc epicgames
           </p>
         </div>
 

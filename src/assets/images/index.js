@@ -21,6 +21,9 @@ import feat1 from "./featureDetail/1.png";
 import feat2 from "./featureDetail/2.png";
 import feat3 from "./featureDetail/3.png";
 import feat4 from "./featureDetail/4.png";
+import caydongho from "./featureDetail/f17-caydongho.png";
+import haithaomoc from "./featureDetail/f17-haithaomoc.png";
+import ruatien from "./featureDetail/f17-ruatien.png";
 
 //Social icon
 import TikTok from "./social/tiktok.png";
@@ -51,6 +54,9 @@ const Images = {
     feat2,
     feat3,
     feat4,
+    caydongho,
+    haithaomoc,
+    ruatien,
   },
   // Nội dung slideshow
   Features: [
