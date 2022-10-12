@@ -25,7 +25,7 @@ const FeatureDetail = () => {
             <div className="feature-image">
               <Carousel interval={true} showThumbs={true} emulateTouch={true}>
                 {listTab[selectTab].imgFeatures.map((img, index) => (
-                  <div key={index}>
+                  <div className="feature-image__imgs" key={index}>
                     <img src={img}/>
                   </div>
                 ))}
@@ -45,8 +45,8 @@ const listTab = [
     label: "Sự kiện",
     contents: ["+ 30 sự kiện mới"],
     imgFeatures: [
-      Images.FeatureDetail.feat1,
-      Images.FeatureDetail.feat2,
+      Images.FeatureDetail.baba2,
+      Images.FeatureDetail.baba,
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4,
     ],
@@ -67,6 +67,7 @@ const listTab = [
     label: "Khuyến mãi",
     contents: ["+ Ưu đãi tháng 8"],
     imgFeatures: [
+      Images.FeatureDetail.baba2,
       Images.FeatureDetail.feat1,
       Images.FeatureDetail.feat2
     ],
