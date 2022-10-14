@@ -25,7 +25,7 @@ const FeatureDetail = () => {
             <div className="feature-image">
               <Carousel interval={true} showThumbs={true} emulateTouch={true}>
                 {listTab[selectTab].imgFeatures.map((img, index) => (
-                  <div key={index}>
+                  <div className="feature-image__imgs" key={index}>
                     <img src={img}/>
                   </div>
                 ))}
@@ -43,10 +43,10 @@ const listTab = [
   {
     key: "event",
     label: "Sự kiện",
-    contents: ["+ Các sự kiện liên tục hỗ trợ công dân mới."],
+    contents: ["+ 30 sự kiện mới"],
     imgFeatures: [
-      Images.FeatureDetail.feat1,
-      Images.FeatureDetail.feat2,
+      Images.FeatureDetail.baba2,
+      Images.FeatureDetail.baba,
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4,
     ],
@@ -54,8 +54,8 @@ const listTab = [
   },
   {
     key: "store",
-    label: "Nghề nghiệp",
-    contents: ["+ Các nghề đa dạng, chuyên sâu, có cấp độ."],
+    label: "Cửa hàng",
+    contents: ["+ Nâng cấp xe", "+ Thay đổi diện mạo"],
     imgFeatures: [
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4,
@@ -64,29 +64,29 @@ const listTab = [
   },
   {
     key: "sale",
-    label: "Nghề bẩn",
-    contents: ["+ Hồi hộp, kịch tính, thưởng to xứng đáng với công sức."],
+    label: "Khuyến mãi",
+    contents: ["+ Ưu đãi tháng 8"],
     imgFeatures: [
-      Images.FeatureDetail.caydongho,
-      Images.FeatureDetail.haithaomoc,
-      Images.FeatureDetail.ruatien,
+      Images.FeatureDetail.baba2,
+      Images.FeatureDetail.feat1,
+      Images.FeatureDetail.feat2
     ],
     thumbnail: Images.FeatureDetail.sale,
   },
   {
     key: "hot",
-    label: "Hoạt động vui chơi",
-    contents: ["+ Nơi giao lưu, xả stress sau những phi vụ."],
+    label: "Tiêu điểm",
+    contents: ["+ Thông tin nổi bật"],
     imgFeatures: [
-      Images.FeatureDetail.featsanbongda,
-      Images.FeatureDetail.featsangolf
+      Images.FeatureDetail.feat3,
+      Images.FeatureDetail.feat4
     ],
     thumbnail: Images.FeatureDetail.hot,
   },
   {
     key: "activity",
-    label: "Địa điểm thành phố",
-    contents: ["+ Các điểm ẩn chờ công dân khám phá."],
+    label: "Hoạt động",
+    contents: ["+ Hoạt động thành phố"],
     imgFeatures: [
       Images.FeatureDetail.feat1,
       Images.FeatureDetail.feat2
