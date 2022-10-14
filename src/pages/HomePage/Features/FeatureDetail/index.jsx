@@ -65,7 +65,7 @@ const listTab = [
   {
     key: "sale",
     label: "Nghề bẩn",
-    contents: ["+ Hồi hợp, kịch tính, thưởng to xứng đáng với công sức."],
+    contents: ["+ Hồi hộp, kịch tính, thưởng to xứng đáng với công sức."],
     imgFeatures: [
       Images.FeatureDetail.caydongho,
       Images.FeatureDetail.haithaomoc,
