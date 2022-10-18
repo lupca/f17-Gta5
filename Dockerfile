@@ -12,6 +12,7 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/.nginx/nginx_ssl.conf /etc/nginx/conf.d/ssl.conf
+COPY --from=build /app/.nginx/nginx_api.conf /etc/nginx/conf.d/api.conf
 
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
