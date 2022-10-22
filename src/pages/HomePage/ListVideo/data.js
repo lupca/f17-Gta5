@@ -1,29 +1,22 @@
 export const listTab = [
   {
-    key: "newest",
-    label: "Mới nhất",
-    videoIds: [
-      "5-WNjBfF4_o",
-      "tzkmSXQQQaQ",
-      "oXlTNoeNLw8",
-      "exPZfKfSqmQ"
-    ],
-  },
-  {
     key: "event",
+    listId: "PLlyd2e8FEo2eOQmbWYaGYORK1T06Gvks8",
     label: "Sự kiện",
-    videoIds: ["oXlTNoeNLw8", "exPZfKfSqmQ"],
+    videoIds: ['tmp'],
   },
   {
     key: "activities",
+    listId: "PLlyd2e8FEo2ePPfBq8642W_LNeLwa7Mwm",
     label: "Hoạt động thành phố",
     videoIds: [
-      "oXlTNoeNLw8",
+      'tmp'
     ],
   },
   {
     key: "introduction",
+    listId: "PLlyd2e8FEo2dX8RL6Lx7JvicdOhQkbzLE",
     label: "Giới thiệu nghề nghiệp",
-    videoIds: ["6jDvx1rndOk"],
+    videoIds: ['tmp'],
   },
 ];
