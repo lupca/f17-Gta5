@@ -63,12 +63,16 @@ const Images = {
     sale,
     hot,
     store,
-    feat1,
-    feat2,
-    feat3,
-    feat4,
-    baba,
-    baba2,
+    bongda,
+    bongro,
+    bongchuyen,
+    boxing,
+    sangolf,
+    minigolf,
+	khuvuichoi,
+	nhama,
+	plasmakart,
+	
   },
   // Nội dung slideshow
   Features: [
