@@ -24,6 +24,12 @@ import feat4 from "./featureDetail/4.png";
 import baba from "./featureDetail/baba.jpeg";
 import baba2 from "./featureDetail/baba2.jpeg";
 
+//Hinhnen
+import hinhnent07 from "./features/hinhnen/hinhnenthang07.png";
+import hinhnent08 from "./features/hinhnen/hinhnenthang08.png";
+import hinhnent09 from "./features/hinhnen/hinhnenthang09.png";
+import hinhnent10 from "./features/hinhnen/hinhnenthang10.png";
+
 //Social icon
 import TikTok from "./social/tiktok.png";
 import Facebook from "./social/facebook.png";
@@ -59,25 +65,25 @@ const Images = {
   // Nội dung slideshow
   Features: [
     {
-      image: Feature2,
+      image: hinhnent07,
       // Thay đổi text ở dòng dưới.
       content:
-        "Each round, you and 15 other contestants compete toescape a deadly island filled with monsters. Each round, you and 15 other contestants compete toescape a deadly island filled with monsters.",
+        "Hình nền tháng 07 - Server nói không với pay2win.",
     },
     {
-      image: Feature1,
+      image: hinhnent08,
       content:
-        "You and 15 other contestants compete toescape a deadly island filled with monsters.",
+        "Hình nền tháng 08 - Kiếm tiền ingame dễ dàng với 1 loạt nhiệm vụ mới.",
     },
     {
-      image: Feature3,
+      image: hinhnent09,
       content:
-        "15 other contestants compete toescape a deadly island filled with monsters.",
+        "Hình nền tháng 09 - Các nghề nghiệp được trau chuốt tỉ mỉ.",
     },
     {
-      image: Feature3,
+      image: hinhnent10,
       content:
-        "144 other contestants compete toescape a deadly island filled with monsters.",
+        "Hình nền tháng 10 - Ngập tràn quà tặng với update tháng này.",
     },
   ],
   Social: { TikTok, Discord, Facebook, Youtube },

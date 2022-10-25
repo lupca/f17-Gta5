@@ -43,7 +43,7 @@ const listTab = [
   {
     key: "event",
     label: "Sự kiện",
-    contents: ["+ 30 sự kiện mới"],
+    contents: ["+ Hàng loạt sự kiện mới lạ diễn ra theo từng khung giờ."],
     imgFeatures: [
       Images.FeatureDetail.baba2,
       Images.FeatureDetail.baba,
@@ -54,8 +54,8 @@ const listTab = [
   },
   {
     key: "store",
-    label: "Cửa hàng",
-    contents: ["+ Nâng cấp xe", "+ Thay đổi diện mạo"],
+    label: "Nghề nghiệp",
+    contents: ["+ Các nghề đa dạng, chuyên sâu, có cấp độ."],
     imgFeatures: [
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4,
@@ -64,8 +64,8 @@ const listTab = [
   },
   {
     key: "sale",
-    label: "Khuyến mãi",
-    contents: ["+ Ưu đãi tháng 8"],
+    label: "Nghề bẩn",
+    contents: ["+ Hồi hộp, kịch tính, thưởng to xứng đáng với công sức."],
     imgFeatures: [
       Images.FeatureDetail.baba2,
       Images.FeatureDetail.feat1,
@@ -75,8 +75,8 @@ const listTab = [
   },
   {
     key: "hot",
-    label: "Tiêu điểm",
-    contents: ["+ Thông tin nổi bật"],
+    label: "Hoạt động vui chơi",
+    contents: ["+ Nơi giao lưu, xả stress sau những phi vụ."],
     imgFeatures: [
       Images.FeatureDetail.feat3,
       Images.FeatureDetail.feat4
@@ -85,8 +85,8 @@ const listTab = [
   },
   {
     key: "activity",
-    label: "Hoạt động",
-    contents: ["+ Hoạt động thành phố"],
+    label: "Địa điểm thành phố",
+    contents: ["+ Được trau truốt nhiều khu vực."],
     imgFeatures: [
       Images.FeatureDetail.feat1,
       Images.FeatureDetail.feat2
