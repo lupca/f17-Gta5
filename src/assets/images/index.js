@@ -17,18 +17,25 @@ import event from "./features/event.png";
 import hot from "./features/hot.png";
 import sale from "./features/sale.png";
 import store from "./features/store.png";
-import feat1 from "./featureDetail/1.png";
-import feat2 from "./featureDetail/2.png";
-import feat3 from "./featureDetail/3.png";
-import feat4 from "./featureDetail/4.png";
-import baba from "./featureDetail/baba.jpeg";
-import baba2 from "./featureDetail/baba2.jpeg";
 
 //Hinhnen
 import hinhnent07 from "./features/hinhnen/hinhnenthang07.png";
 import hinhnent08 from "./features/hinhnen/hinhnenthang08.png";
 import hinhnent09 from "./features/hinhnen/hinhnenthang09.png";
 import hinhnent10 from "./features/hinhnen/hinhnenthang10.png";
+
+//Slideshow thể thao
+import bongda from "./featureDetail/bongda.jpg";
+import bongro from "./featureDetail/bongro.jpg";
+import bongchuyen from "./featureDetail/bongchuyen.jpg";
+import boxing from "./featureDetail/boxing.jpg";
+import sangolf from "./featureDetail/sangolf.jpg";
+import minigolf from "./featureDetail/minigolf.jpg";
+import khuvuichoi from "./featureDetail/khuvuichoi.jpg";
+import nhama from "./featureDetail/nhama.jpg";
+import plasmakart from "./featureDetail/plasmakart.jpg";
+
+
 
 //Social icon
 import TikTok from "./social/tiktok.png";
@@ -68,17 +75,17 @@ const Images = {
       image: hinhnent07,
       // Thay đổi text ở dòng dưới.
       content:
-        "Hình nền tháng 07 - Server nói không với pay2win.",
+        "Hình nền tháng 07 - Thành phố nói không với pay2win.",
     },
     {
       image: hinhnent08,
       content:
-        "Hình nền tháng 08 - Kiếm tiền ingame dễ dàng với 1 loạt nhiệm vụ mới.",
+        "Hình nền tháng 08 - Kiếm tiền ingame dễ dàng với 1 loạt nhiệm vụ hàng ngày.",
     },
     {
       image: hinhnent09,
       content:
-        "Hình nền tháng 09 - Các nghề nghiệp được trau chuốt tỉ mỉ.",
+        "Hình nền tháng 09 - Các nghề nghiệp được trau chuốt tỉ mỉ, có level.",
     },
     {
       image: hinhnent10,

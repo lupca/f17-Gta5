@@ -78,8 +78,15 @@ const listTab = [
     label: "Hoạt động vui chơi",
     contents: ["+ Nơi giao lưu, xả stress sau những phi vụ."],
     imgFeatures: [
-      Images.FeatureDetail.feat3,
-      Images.FeatureDetail.feat4
+      Images.FeatureDetail.bongda,
+      Images.FeatureDetail.bongro,
+      Images.FeatureDetail.bongchuyen,
+      Images.FeatureDetail.boxing,
+      Images.FeatureDetail.sangolf,
+      Images.FeatureDetail.minigolf,
+      Images.FeatureDetail.khuvuichoi,
+      Images.FeatureDetail.nhama,
+      Images.FeatureDetail.plasmakart
     ],
     thumbnail: Images.FeatureDetail.hot,
   },
