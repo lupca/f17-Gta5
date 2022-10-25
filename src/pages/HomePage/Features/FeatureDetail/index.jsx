@@ -45,10 +45,7 @@ const listTab = [
     label: "Sự kiện",
     contents: ["+ Hàng loạt sự kiện mới lạ diễn ra theo từng khung giờ."],
     imgFeatures: [
-      Images.FeatureDetail.baba2,
-      Images.FeatureDetail.baba,
-      Images.FeatureDetail.feat3,
-      Images.FeatureDetail.feat4,
+      Images.FeatureDetail.nhama
     ],
     thumbnail: Images.FeatureDetail.event,
   },
@@ -57,8 +54,7 @@ const listTab = [
     label: "Nghề nghiệp",
     contents: ["+ Các nghề đa dạng, chuyên sâu, có cấp độ."],
     imgFeatures: [
-      Images.FeatureDetail.feat3,
-      Images.FeatureDetail.feat4,
+      Images.FeatureDetail.nhama
     ],
     thumbnail: Images.FeatureDetail.store,
   },
@@ -67,9 +63,7 @@ const listTab = [
     label: "Nghề bẩn",
     contents: ["+ Hồi hộp, kịch tính, thưởng to xứng đáng với công sức."],
     imgFeatures: [
-      Images.FeatureDetail.baba2,
-      Images.FeatureDetail.feat1,
-      Images.FeatureDetail.feat2
+      Images.FeatureDetail.nhama
     ],
     thumbnail: Images.FeatureDetail.sale,
   },
@@ -95,8 +89,7 @@ const listTab = [
     label: "Địa điểm thành phố",
     contents: ["+ Được trau truốt nhiều khu vực."],
     imgFeatures: [
-      Images.FeatureDetail.feat1,
-      Images.FeatureDetail.feat2
+      Images.FeatureDetail.nhama
     ],
     thumbnail: Images.FeatureDetail.gameController,
   },
