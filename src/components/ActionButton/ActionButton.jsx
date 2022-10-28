@@ -4,7 +4,7 @@ import './ActionButton.scss'
 
 export const ActionButton = () => {
     const handleActionButton = () => {
-        window.open("https://cfx.re/join/b3bgbd/");
+        window.open("https://cfx.re/join/b3bgbd");
     };
 
   return (
