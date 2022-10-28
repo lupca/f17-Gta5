@@ -54,6 +54,7 @@ import diemdanh from "./featureDetail/diemdanh.jpg";
 import nvhangngay from "./featureDetail/nvhangngay.jpg";
 import eventlootthinh from "./featureDetail/eventlootthinh.jpg";
 import eventthamthinh from "./featureDetail/eventthamthinh.jpg";
+import sangiaodich from "./featureDetail/sangiaodich.jpg";
 
 //Slideshow nghề bẩn
 import maithuy from "./featureDetail/maithuy.jpg";
@@ -70,8 +71,17 @@ import chetao from "./featureDetail/chetao.jpg";
 import baigiamxe from "./featureDetail/baigiamxe.jpg";
 import garage from "./featureDetail/garage.jpg";
 import barbershop from "./featureDetail/barbershop.jpg";
-import xaydung from "./featureDetail/xaydung.jpg";
-import xetai from "./featureDetail/xetai.jpg";
+import shopthoitrang from "./featureDetail/shopthoitrang.jpg";
+import showroomcar from "./featureDetail/showroomcar.jpg";
+import suaxeluudong from "./featureDetail/suaxeluudong.jpg";
+import taphoa from "./featureDetail/taphoa.jpg";
+import thuexe from "./featureDetail/thuexe.jpg";
+import thuongxa from "./featureDetail/thuongxa.jpg";
+import tiemxam from "./featureDetail/tiemxam.jpg";
+import trada from "./featureDetail/trada.jpg";
+import tramxang from "./featureDetail/tramxang.jpg";
+import xuongdo from "./featureDetail/xuongdo.jpg";
+
 
 //Social icon
 import TikTok from "./social/tiktok.png";
@@ -107,6 +117,45 @@ const Images = {
 	khuvuichoi,
 	nhama,
 	plasmakart,
+  vesinh,
+  xaydung,
+  xetai,
+  bacsi,
+  canhsat,
+  giaodoan,
+  haitraicay,
+  lamga,
+  thomo,
+  thomoc,
+  quaonline,
+  diemdanh,
+  nvhangngay,
+  eventlootthinh,
+  eventthamthinh,
+  sangiaodich,
+  maithuy,
+  coke,
+  tromxe,
+  tromcho,
+  caydongho,
+  haithaomoc,
+  dieman,
+  chesung,
+  chetao,
+  baigiamxe,
+  garage,
+  barbershop,
+  shopthoitrang,
+  showroomcar,
+  suaxeluudong,
+  taphoa,
+  thuexe,
+  thuongxa,
+  tiemxam,
+  trada,
+  tramxang,
+  xuongdo,
+  
 	
   },
   // Nội dung slideshow
