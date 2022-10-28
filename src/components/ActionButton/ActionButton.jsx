@@ -4,7 +4,7 @@ import './ActionButton.scss'
 
 export const ActionButton = () => {
     const handleActionButton = () => {
-        window.open("https://www.youtube.com/watch?time_continue=1&v=tzkmSXQQQaQ");
+        window.open("https://cfx.re/join/b3bgbd/");
     };
 
   return (

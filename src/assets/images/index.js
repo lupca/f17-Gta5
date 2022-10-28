@@ -36,7 +36,42 @@ import khuvuichoi from "./featureDetail/khuvuichoi.jpg";
 import nhama from "./featureDetail/nhama.jpg";
 import plasmakart from "./featureDetail/plasmakart.jpg";
 
+//Slideshow nghề nghiệp
+import giaodoan from "./featureDetail/giaodoan.jpg";
+import haitraicay from "./featureDetail/haitraicay.jpg";
+import lamga from "./featureDetail/lamga.jpg";
+import thomo from "./featureDetail/thomo.jpg";
+import thomoc from "./featureDetail/thomoc.jpg";
+import vesinh from "./featureDetail/vesinh.jpg";
+import xaydung from "./featureDetail/xaydung.jpg";
+import xetai from "./featureDetail/xetai.jpg";
+import bacsi from "./featureDetail/bacsi.jpg";
+import canhsat from "./featureDetail/canhsat.jpg";
 
+//Slideshow sự kiện
+import quaonline from "./featureDetail/quaonline.jpg";
+import diemdanh from "./featureDetail/diemdanh.jpg";
+import nvhangngay from "./featureDetail/nvhangngay.jpg";
+import eventlootthinh from "./featureDetail/eventlootthinh.jpg";
+import eventthamthinh from "./featureDetail/eventthamthinh.jpg";
+
+//Slideshow nghề bẩn
+import maithuy from "./featureDetail/maithuy.jpg";
+import coke from "./featureDetail/coke.jpg";
+import tromxe from "./featureDetail/tromxe.jpg";
+import tromcho from "./featureDetail/tromcho.jpg";
+import caydongho from "./featureDetail/caydongho.jpg";
+import haithaomoc from "./featureDetail/haithaomoc.jpg";
+
+//Slideshow địa điểm thành phố
+import dieman from "./featureDetail/dieman.jpg";
+import chesung from "./featureDetail/chesung.jpg";
+import chetao from "./featureDetail/chetao.jpg";
+import baigiamxe from "./featureDetail/baigiamxe.jpg";
+import garage from "./featureDetail/garage.jpg";
+import barbershop from "./featureDetail/barbershop.jpg";
+import xaydung from "./featureDetail/xaydung.jpg";
+import xetai from "./featureDetail/xetai.jpg";
 
 //Social icon
 import TikTok from "./social/tiktok.png";

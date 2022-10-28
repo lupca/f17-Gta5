@@ -4,7 +4,7 @@ import "./Card.scss";
 
 const Register = ({onClick, isSelected}) => {
   const registerHandle = () => {
-    window.open("https://www.youtube.com/watch?v=tzkmSXQQQaQ&t=1s")
+    window.open("https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/")
   }
   return (
     <div className={`card card1 ${isSelected}`} onClick={onClick}>

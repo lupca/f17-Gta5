@@ -45,7 +45,12 @@ const listTab = [
     label: "Sự kiện",
     contents: ["+ Hàng loạt sự kiện mới lạ diễn ra theo từng khung giờ."],
     imgFeatures: [
-      Images.FeatureDetail.nhama
+      Images.FeatureDetail.quaonline,
+      Images.FeatureDetail.diemdanh,
+      Images.FeatureDetail.nvhangngay,
+      Images.FeatureDetail.eventlootthinh,
+      Images.FeatureDetail.eventthamthinh,
+      Images.FeatureDetail.sangiaodich
     ],
     thumbnail: Images.FeatureDetail.event,
   },
@@ -54,7 +59,16 @@ const listTab = [
     label: "Nghề nghiệp",
     contents: ["+ Các nghề đa dạng, chuyên sâu, có cấp độ."],
     imgFeatures: [
-      Images.FeatureDetail.nhama
+      Images.FeatureDetail.vesinh,
+      Images.FeatureDetail.xaydung,
+      Images.FeatureDetail.xetai,
+      Images.FeatureDetail.giaodoan,
+      Images.FeatureDetail.haitraicay,
+      Images.FeatureDetail.lamga,
+      Images.FeatureDetail.thomo,
+      Images.FeatureDetail.thomoc,
+      Images.FeatureDetail.bacsi,
+      Images.FeatureDetail.canhsat
     ],
     thumbnail: Images.FeatureDetail.store,
   },
@@ -63,7 +77,12 @@ const listTab = [
     label: "Nghề bẩn",
     contents: ["+ Hồi hộp, kịch tính, thưởng to xứng đáng với công sức."],
     imgFeatures: [
-      Images.FeatureDetail.nhama
+      Images.FeatureDetail.maithuy,
+      Images.FeatureDetail.coke,
+      Images.FeatureDetail.tromxe,
+      Images.FeatureDetail.tromcho,
+      Images.FeatureDetail.caydongho,
+      Images.FeatureDetail.haithaomoc
     ],
     thumbnail: Images.FeatureDetail.sale,
   },
@@ -89,7 +108,21 @@ const listTab = [
     label: "Địa điểm thành phố",
     contents: ["+ Được trau truốt nhiều khu vực."],
     imgFeatures: [
-      Images.FeatureDetail.nhama
+      Images.FeatureDetail.dieman,
+      Images.FeatureDetail.chesung,
+      Images.FeatureDetail.chetao,
+      Images.FeatureDetail.baigiamxe,
+      Images.FeatureDetail.barbershop,
+      Images.FeatureDetail.shopthoitrang,
+      Images.FeatureDetail.showroomcar,
+      Images.FeatureDetail.suaxeluudong,
+      Images.FeatureDetail.taphoa,
+      Images.FeatureDetail.thuexe,
+      Images.FeatureDetail.thuongxa,
+      Images.FeatureDetail.tiemxam,
+      Images.FeatureDetail.trada,
+      Images.FeatureDetail.tramxang,
+      Images.FeatureDetail.xuongdo
     ],
     thumbnail: Images.FeatureDetail.gameController,
   },
