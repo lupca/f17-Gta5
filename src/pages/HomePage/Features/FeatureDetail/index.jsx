@@ -46,8 +46,10 @@ const listTab = [
     contents: ["+ Hàng loạt sự kiện mới lạ diễn ra theo từng khung giờ."],
     imgFeatures: [
       Images.FeatureDetail.quaonline,
+      Images.FeatureDetail.battlepass,
+      Images.FeatureDetail.nhiemvu,
       Images.FeatureDetail.diemdanh,
-      Images.FeatureDetail.nvhangngay,
+      Images.FeatureDetail.duaxe,
       Images.FeatureDetail.eventlootthinh,
       Images.FeatureDetail.eventthamthinh,
       Images.FeatureDetail.sangiaodich

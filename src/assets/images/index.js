@@ -51,10 +51,13 @@ import canhsat from "./featureDetail/canhsat.jpg";
 //Slideshow sự kiện
 import quaonline from "./featureDetail/quaonline.jpg";
 import diemdanh from "./featureDetail/diemdanh.jpg";
-import nvhangngay from "./featureDetail/nvhangngay.jpg";
+import battlepass from "./featureDetail/eventlootthinh.jpg";
+import duaxe from "./featureDetail/eventthamthinh.jpg";
+import nhiemvu from "./featureDetail/sangiaodich.jpg";
 import eventlootthinh from "./featureDetail/eventlootthinh.jpg";
 import eventthamthinh from "./featureDetail/eventthamthinh.jpg";
 import sangiaodich from "./featureDetail/sangiaodich.jpg";
+
 
 //Slideshow nghề bẩn
 import maithuy from "./featureDetail/maithuy.jpg";
@@ -129,7 +132,9 @@ const Images = {
   thomoc,
   quaonline,
   diemdanh,
-  nvhangngay,
+  battlepass,
+  duaxe,
+  nhiemvu,
   eventlootthinh,
   eventthamthinh,
   sangiaodich,
