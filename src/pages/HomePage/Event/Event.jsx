@@ -14,7 +14,7 @@ const EventComponent = () => {
             <p className="text-3">Tại thành phố F17City</p>
           </div>
           <a className="btn--link-to-event" href="https://docs.google.com/document/d/1zbJArSpriLW6yJEQiP3BAeVnP9lIp58-2sN0AnyMRl4/" target="_blank">
-            <p>Hành tẩu giang hồ<br/>trong 1 nốt</p>
+            <p>Hành tẩu chỉ<br/>trong 1 nốt</p>
             <span className="MuiTouchRipple-root css-w0pj6f"></span>
           </a>
           </div>
