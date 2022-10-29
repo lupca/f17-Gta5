@@ -9,12 +9,12 @@ const EventComponent = () => {
           <div className="how-to-start-header">
             <p className="text-1">Không biết ?</p>
             <p className="text-2">
-              <span>Cách</span> tham gia máy chủ
+              <span>Hướng dẫn</span> khởi nghiệp
             </p>
-            <p className="text-3">Chỉ với 2 bước</p>
+            <p className="text-3">Tại thành phố F17City</p>
           </div>
-          <a className="btn--link-to-event" href="https://www.youtube.com/watch?v=5-WNjBfF4_o" target="_blank">
-            <p>Cách tham gia<br/>trong 1 phút</p>
+          <a className="btn--link-to-event" href="https://docs.google.com/document/d/1zbJArSpriLW6yJEQiP3BAeVnP9lIp58-2sN0AnyMRl4/" target="_blank">
+            <p>Hành tẩu giang hồ<br/>trong 1 nốt</p>
             <span className="MuiTouchRipple-root css-w0pj6f"></span>
           </a>
           </div>
