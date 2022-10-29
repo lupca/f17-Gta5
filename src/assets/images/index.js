@@ -51,9 +51,9 @@ import canhsat from "./featureDetail/canhsat.jpg";
 //Slideshow sự kiện
 import quaonline from "./featureDetail/quaonline.jpg";
 import diemdanh from "./featureDetail/diemdanh.jpg";
-import battlepass from "./featureDetail/eventlootthinh.jpg";
-import duaxe from "./featureDetail/eventthamthinh.jpg";
-import nhiemvu from "./featureDetail/sangiaodich.jpg";
+import battlepass from "./featureDetail/battlepass.jpg";
+import duaxe from "./featureDetail/duaxe.jpg";
+import nhiemvu from "./featureDetail/nhiemvu.jpg";
 import eventlootthinh from "./featureDetail/eventlootthinh.jpg";
 import eventthamthinh from "./featureDetail/eventthamthinh.jpg";
 import sangiaodich from "./featureDetail/sangiaodich.jpg";
